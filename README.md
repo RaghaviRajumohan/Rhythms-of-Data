@@ -11,4 +11,4 @@ These projects highlight the diverse applications of data science within the mus
 
 | Project Name | Description |    
 |---|---|
-| 📺 [Linear Regression from Scratch](https://github.com/RaghaviRajumohan/Rhythms-of-Data/tree/main/Music_Streams_Prediction_Model) |This project builds a model to predict music streaming numbers by analysing key factors that drive listener engagement, helping the understand and anticipate streaming trends.  | 
+| 🎶 [Linear Regression from Scratch](https://github.com/RaghaviRajumohan/Rhythms-of-Data/tree/main/Music_Streams_Prediction_Model) |This project builds a model to predict music streaming numbers by analysing key factors that drive listener engagement, helping the understand and anticipate streaming trends.  | 
