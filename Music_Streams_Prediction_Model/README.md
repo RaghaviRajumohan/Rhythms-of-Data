@@ -65,9 +65,10 @@ In developing a regression model to predict `log_Stream`, we explored various mo
    - The baseline model served as a foundation for comparison, allowing us to assess potential improvements by introducing interaction and quadratic terms.
    - **Formula of the Baseline Model**:
      
-     \[
-     \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{log\_Duration\_ms} + \beta_2 \cdot \text{log\_Comments} + \beta_3 \cdot \text{Danceability} + \beta_4 \cdot \text{Valence} + \beta_5 \cdot \text{Liveness} + \epsilon
-     \]
+    $$
+\text{log_Stream} = \beta_0 + \beta_1 \cdot \text{Acousticness} + \beta_2 \cdot \text{Liveness} + \beta_3 \cdot \text{Speechiness} + \beta_4 \cdot \text{Instrumentalness\_logit} + \beta_5 \cdot \text{Licensed} + \beta_6 \cdot \text{log_Duration_ms} + \beta_7 \cdot \text{Valence} + \beta_8 \cdot \text{log_Comments} + \beta_9 \cdot \text{Album\_single}
+$$
+
 
      where:
      - \( \beta_0 \) is the intercept.
