@@ -39,11 +39,6 @@ Key insights from EDA informed our understanding of the data distributions and c
      <img src="Assets/Scatter_Plot.png" alt="Density Plots" width="400" style="display: block; margin: 10px auto 20px auto;">
 
 ### 3. Feature Selection
-Using Boruta SHAP and Variance Inflation Factor (VIF) analysis, we identified significant predictors:
-- **Top Features**: `log_Duration_ms`, `log_Comments`, `Valence`, `Danceability`, `Liveness`, and `Speechiness`.
-- **Variables Removed**: High collinearity led to the removal of `log_Likes` and `log_Views`.
-
-### 3. Feature Selection
 
 To determine the most impactful features for predicting `log_Stream`, we used three main approaches:
 
@@ -52,59 +47,12 @@ To determine the most impactful features for predicting `log_Stream`, we used th
 3. **ANOVA**: Conducted to evaluate the significance of categorical variables in predicting `log_Stream` by examining F-values. The lower the p-value, the more significant the variable is in explaining variability in the target.
 
 #### Selected Features
-Based on the Boruta SHAP, VIF, and ANOVA analyses, we identified the following significant predictors: `log_Duration_ms`, `log_Comments`, `Valence`, `Danceability`, `Liveness`, and `Speechiness`. Variables with high collinearity (`log_Likes` and `log_Views`) were removed due to their high VIF scores.
+ 
+  - Variables with a VIF score above 10, such as `log_Likes` and `log_Views`, were excluded due to high multicollinearity.
 
-#### Results Tables
+  - The Boruta SHAP algorithm highlighted variables with a ranking of 1 as the most important, such as `Danceability`, `log_Duration_ms`, and `log_Comments`.
 
-- **Variance Inflation Factor (VIF) Scores**
-
-  | Feature              | VIF       |
-  |----------------------|-----------|
-  | log_Likes            | 25.40     |
-  | log_Views            | 18.21     |
-  | log_Comments         | 6.53      |
-  | Energy               | 3.51      |
-  | Loudness             | 3.35      |
-  | Acousticness         | 1.92      |
-  | Danceability         | 1.65      |
-  | Valence              | 1.59      |
-  | Instrumentalness_logit | 1.51   |
-  | Speechiness          | 1.14      |
-  | log_Duration_ms      | 1.11      |
-  | Liveness             | 1.07      |
-  | Tempo                | 1.06      |
-  | Key                  | 1.00      |
-
-  Variables with a VIF score above 10, such as `log_Likes` and `log_Views`, were excluded due to high multicollinearity.
-
-- **Boruta SHAP Ranking**
-
-  | Feature               | Rank |
-  |-----------------------|------|
-  | Danceability          | 1    |
-  | Speechiness           | 1    |
-  | Acousticness          | 1    |
-  | Liveness              | 1    |
-  | log_Duration_ms       | 1    |
-  | Instrumentalness_logit| 1    |
-  | log_Comments          | 1    |
-  | Valence               | 2    |
-  | Tempo                 | 3    |
-  | Energy                | 3    |
-  | Loudness              | 3    |
-  | Key                   | 4    |
-
-  The Boruta SHAP algorithm highlighted variables with a ranking of 1 as the most important, such as `Danceability`, `log_Duration_ms`, and `log_Comments`.
-
-- **ANOVA F-values for Categorical Variables**
-
-  | Factor               | F-statistic     |
-  |----------------------|-----------------|
-  | Album_single         | 496.75         |
-  | Licensed             | 215.58         |
-  | official_video       | 185.62         |
-
-  ANOVA results show that `Album_single`, `Licensed`, and `official_video` were statistically significant in predicting `log_Stream`, with `Album_single` having the highest F-statistic.
+ -  ANOVA results show that `Album_single`, `Licensed`, and `official_video` were statistically significant in predicting `log_Stream`, with `Album_single` having the highest F-statistic.
 
 ### 4. Model Development
 Several regression models were tested using Ordinary Least Squares (OLS), with **Model 3** emerging as the best fit due to simplicity and low multicollinearity.
