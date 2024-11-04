@@ -59,15 +59,14 @@ To determine the most impactful features for predicting `log_Stream`, we used th
 In developing a regression model to predict `log_Stream`, we explored various model iterations, including the use of Mallows' \( C_p \) criterion to guide model selection. Mallows' \( C_p \) is a model selection statistic that helps identify models that provide a good balance between accuracy and simplicity. Lower \( C_p \) values indicate models that are closer to the true model, with minimal bias and variance.
 
 #### Step-by-Step Process
-
 1. **Baseline Model**:
    - We ran a regression of all the selected variables and applied Mallows' \( C_p \) criterion to select our baseline model. This model included only the key features identified through Boruta SHAP and VIF analysis.
    - The baseline model served as a foundation for comparison, allowing us to assess potential improvements by introducing interaction and quadratic terms.
    - **Formula of the Baseline Model**:
      
-    $$
-\text{log_Stream} = \beta_0 + \beta_1 \cdot \text{Acousticness} + \beta_2 \cdot \text{Liveness} + \beta_3 \cdot \text{Speechiness} + \beta_4 \cdot \text{Instrumentalness\_logit} + \beta_5 \cdot \text{Licensed} + \beta_6 \cdot \text{log_Duration_ms} + \beta_7 \cdot \text{Valence} + \beta_8 \cdot \text{log_Comments} + \beta_9 \cdot \text{Album\_single}
-$$
+     $$
+     \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{Acousticness} + \beta_2 \cdot \text{Liveness} + \beta_3 \cdot \text{Speechiness} + \beta_4 \cdot \text{Instrumentalness\_logit} + \beta_5 \cdot \text{Licensed} + \beta_6 \cdot \text{log\_Duration\_ms} + \beta_7 \cdot \text{Valence} + \beta_8 \cdot \text{log\_Comments} + \beta_9 \cdot \text{Album\_single}
+     $$
 
 
      where:
