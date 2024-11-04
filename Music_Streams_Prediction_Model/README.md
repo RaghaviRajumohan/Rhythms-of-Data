@@ -30,7 +30,8 @@ Key insights from EDA informed our understanding of the data distributions and c
      <img src="Assets/Density_Plots.png" alt="Density Plots" width="300" style="display: block; margin: 10px auto 20px auto;">
  
 - **Scatter Plots**: Assessed linearity between `log_Stream` and key predictors, highlighting non-linear patterns for many variables.
-  - **Insert Image**: ![Scatter Plots](assets/scatter_plots.png)
+  
+     <img src="Assets/Scatter_Plot.png" alt="Density Plots" width="300" style="display: block; margin: 10px auto 20px auto;">
 
 ### 3. Feature Selection
 Using Boruta SHAP and Variance Inflation Factor (VIF) analysis, we identified significant predictors:
