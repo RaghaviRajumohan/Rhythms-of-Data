@@ -52,7 +52,7 @@ To determine the most impactful features for predicting `log_Stream`, we used th
 
   - The Boruta SHAP algorithm highlighted variables with a ranking of 1 as the most important, such as `Danceability`, `log_Duration_ms`, and `log_Comments`.
 
- -  ANOVA results show that `Album_single`, `Licensed`, and `official_video` were statistically significant in predicting `log_Stream`, with `Album_single` having the highest F-statistic.
+ -  ANOVA results show that `Album_single` and `Licensed` were more statistically significant in predicting `log_Stream`, with `Album_single` having the highest F-statistic. `Offical_Video` was dropped to resolve multicollinearity with `Licensed`.
 
 ### 4. Model Development
 Several regression models were tested using Ordinary Least Squares (OLS), with **Model 3** emerging as the best fit due to simplicity and low multicollinearity.
