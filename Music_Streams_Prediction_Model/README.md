@@ -26,7 +26,9 @@ Key insights from EDA informed our understanding of the data distributions and c
   <img src="Assets/Corr_Plot.png" alt="Correlation Heatmap" width="300" style="display: block; margin: 10px auto 20px auto;">
 
 - **Histogram and Density Plots**: Provided insights into data distributions for variables such as `Acousticness`, `Liveness`, and `Speechiness`.
-  - **Insert Image**: ![Feature Distribution](assets/histogram_density.png)
+
+<img src="Assets/Density_Plots.png" alt="Density Plots" width="300" style="display: block; margin: 10px auto 20px auto;">
+ 
 - **Scatter Plots**: Assessed linearity between `log_Stream` and key predictors, highlighting non-linear patterns for many variables.
   - **Insert Image**: ![Scatter Plots](assets/scatter_plots.png)
 
