@@ -23,7 +23,7 @@ Key insights from EDA informed our understanding of the data distributions and c
 
 - **Correlation Heatmap**: Identified strong positive correlation between `Licensed` and `official_video`, suggesting possible redundancy.
 
-  <img src="Assets/Corr_Plot.png" alt="Correlation Heatmap" width="400" style="display: block; margin-top: 10px; margin-bottom: 20px;">
+  <img src="Assets/Corr_Plot.png" alt="Correlation Heatmap" width="300" style="display: block; margin: 10px auto 20px auto;">
 
 - **Histogram and Density Plots**: Provided insights into data distributions for variables such as `Acousticness`, `Liveness`, and `Speechiness`.
   - **Insert Image**: ![Feature Distribution](assets/histogram_density.png)
