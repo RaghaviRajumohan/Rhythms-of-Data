@@ -56,63 +56,79 @@ To determine the most impactful features for predicting `log_Stream`, we used th
 
 ### 4. Model Development
 
-In developing a regression model to predict `log_Stream`, we tested several iterations, including interactions and quadratic terms, to find the best fit. The final model (referred to as **Model 3**) was selected for its simplicity and minimized multicollinearity, while still achieving strong predictive performance.
+In developing a regression model to predict `log_Stream`, we explored various model iterations, including the use of Mallows' \( C_p \) criterion to guide model selection. Mallows' \( C_p \) is a model selection statistic that helps identify models that provide a good balance between accuracy and simplicity. Lower \( C_p \) values indicate models that are closer to the true model, with minimal bias and variance.
 
 #### Step-by-Step Process
 
-1. **Baseline Model**: 
-   - Initially, we used a simple **Ordinary Least Squares (OLS)** regression with all selected features identified through Boruta SHAP and VIF analysis.
-   - The model served as a baseline to assess basic predictive power without any complex terms.
-   - Initial metrics: 
+1. **Baseline Model**:
+   - We ran a regression of all the selected variables and applied Mallows' \( C_p \) criterion to select our baseline model. This model included only the key features identified through Boruta SHAP and VIF analysis.
+   - The baseline model served as a foundation for comparison, allowing us to assess potential improvements by introducing interaction and quadratic terms.
+   - **Formula of the Baseline Model**:
+     
+     \[
+     \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{log\_Duration\_ms} + \beta_2 \cdot \text{log\_Comments} + \beta_3 \cdot \text{Danceability} + \beta_4 \cdot \text{Valence} + \beta_5 \cdot \text{Liveness} + \epsilon
+     \]
+
+     where:
+     - \( \beta_0 \) is the intercept.
+     - \( \beta_1, \beta_2, \dots, \beta_5 \) are coefficients for each predictor.
+     - \( \epsilon \) is the error term.
+
+   - Initial metrics:
      - **R-squared**: 28.3%
      - **Adjusted R-squared**: 27.6%
+     - **Mallows' \( C_p \)**: Higher than optimal, suggesting further refinements were needed.
 
 2. **Adding Interaction Terms**:
-   - Interaction terms allow us to capture the combined effect of two predictors on `log_Stream`, which may not be obvious when considering predictors independently.
-   - **Tested Interactions**: 
+   - Interaction terms were introduced to capture the combined effects of specific pairs of predictors on `log_Stream`.
+   - **Tested Interactions**:
      - `log_Duration_ms * Danceability`
      - `Valence * Liveness`
      - `log_Comments * Speechiness`
    - **Evaluation**:
-     - Each interaction term was tested individually to avoid overfitting.
-     - The interactions `log_Duration_ms * Danceability` and `Valence * Liveness` significantly improved the model's fit, leading to a modest increase in **R-squared** to 31.2%.
-     - The interaction term `log_Comments * Speechiness` was not significant and was excluded.
+     - Each interaction term was evaluated individually using Mallows' \( C_p \), with lower \( C_p \) values indicating improved fit.
+     - `log_Duration_ms * Danceability` and `Valence * Liveness` were significant and reduced \( C_p \), enhancing the model's explanatory power.
+     - **Updated Formula**:
+
+       \[
+       \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{log\_Duration\_ms} + \beta_2 \cdot \text{log\_Comments} + \beta_3 \cdot \text{Danceability} + \beta_4 \cdot \text{Valence} + \beta_5 \cdot \text{Liveness} + \beta_6 \cdot (\text{log\_Duration\_ms} \cdot \text{Danceability}) + \beta_7 \cdot (\text{Valence} \cdot \text{Liveness}) + \epsilon
+       \]
 
 3. **Adding Quadratic Terms**:
-   - Quadratic terms were included to capture any non-linear relationships between the predictors and `log_Stream`.
+   - Quadratic terms were added to account for non-linear relationships between certain predictors and `log_Stream`.
    - **Tested Quadratic Terms**:
      - `Danceability^2`
      - `Valence^2`
-     - `log_Duration_ms^2`
    - **Evaluation**:
-     - The inclusion of `Danceability^2` and `Valence^2` provided a better fit, capturing curvature in the relationship between these variables and `log_Stream`.
-     - `log_Duration_ms^2` did not improve the model and was excluded.
-     - This step increased **R-squared** to 33.5%, indicating improved model fit without substantial complexity.
+     - Including `Danceability^2` and `Valence^2` further reduced Mallows' \( C_p \) and improved model fit, indicating that moderate values of these variables were optimal for popularity.
+     - **Final Formula**:
 
-4. **Final Model Selection (Model 3)**:
-   - After testing interaction and quadratic terms, **Model 3** was selected as the final model.
-   - **Final Model**: Excludes `Acousticness` due to its minimal contribution to predictive power and to reduce complexity.
-   - Key predictors: 
-     - Linear terms: `log_Comments`, `log_Duration_ms`, `Danceability`, `Valence`
-     - Interaction terms: `log_Duration_ms * Danceability`, `Valence * Liveness`
-     - Quadratic terms: `Danceability^2`, `Valence^2`
+       \[
+       \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{log\_Duration\_ms} + \beta_2 \cdot \text{log\_Comments} + \beta_3 \cdot \text{Danceability} + \beta_4 \cdot \text{Valence} + \beta_5 \cdot \text{Liveness} + \beta_6 \cdot (\text{log\_Duration\_ms} \cdot \text{Danceability}) + \beta_7 \cdot (\text{Valence} \cdot \text{Liveness}) + \beta_8 \cdot \text{Danceability}^2 + \beta_9 \cdot \text{Valence}^2 + \epsilon
+       \]
 
-#### Performance Metrics
+#### Final Model Performance
 - **R-squared**: 34.5%, indicating that the model explains 34.5% of the variance in `log_Stream`.
 - **Adjusted R-squared**: 33.8%, confirming that the model maintains explanatory power without overfitting.
 - **F-statistic**: High significance level (p < 0.001), confirming the overall reliability of the model.
-  
+
 #### Model Coefficients and Interpretation
 The final model coefficients showed notable associations with `log_Stream`:
+
 - **Positive Associations**:
   - `log_Comments`: Higher values are associated with increased stream counts, emphasizing the impact of social engagement.
   - `log_Duration_ms`: Longer song durations have a positive effect on streams.
   - **Interaction** (`log_Duration_ms * Danceability`): Indicates that songs with higher danceability benefit even more from longer durations.
+
 - **Curvature Effects**:
-  - `Danceability^2` and `Valence^2`: Suggests a non-linear relationship, where moderate values of these features may be optimal for popularity rather than extremely high or low values.
+  - `Danceability^2` and `Valence^2`: Suggest a non-linear relationship, where moderate values of these features may be optimal for popularity rather than extremely high or low values.
 
 The final model provides a robust and interpretable framework for predicting song popularity on Spotify, balancing simplicity with predictive power.
 
+<div align="center">
+  <!-- Placeholder for Model Plots -->
+  <img src="Assets/model_plots_placeholder.png" alt="Model Diagnostic Plots" width="500" style="display: block; margin-top: 20px; margin-bottom: 20px;">
+</div>
 ### 5. Findings and Recommendations
 The analysis highlighted social engagement (`log_Comments`) and track characteristics (`Danceability`, `Valence`) as key drivers of popularity. Industry professionals can use these insights to tailor song attributes for optimal audience engagement.
 
