@@ -20,7 +20,7 @@ This project aims to analyze and predict song popularity based on attributes fro
 ### 2. Exploratory Data Analysis (EDA)
 Key insights from EDA informed our understanding of the data distributions and correlations:
 - **Correlation Heatmap**: Identified strong positive correlation between `Licensed` and `official_video`, suggesting possible redundancy.
-  - **Insert Image**: ![Correlation Heatmap](Assets/Corr_Plot.png)
+   <img src="Assets/Corr_Plot.png" alt="Correlation Heatmap" width="400">
 - **Histogram and Density Plots**: Provided insights into data distributions for variables such as `Acousticness`, `Liveness`, and `Speechiness`.
   - **Insert Image**: ![Feature Distribution](assets/histogram_density.png)
 - **Scatter Plots**: Assessed linearity between `log_Stream` and key predictors, highlighting non-linear patterns for many variables.
