@@ -82,8 +82,6 @@ Based on the Boruta SHAP, VIF, and ANOVA analyses, we identified the following s
   | Feature               | Rank |
   |-----------------------|------|
   | Danceability          | 1    |
-  | Energy                | 1    |
-  | Loudness              | 1    |
   | Speechiness           | 1    |
   | Acousticness          | 1    |
   | Liveness              | 1    |
@@ -92,6 +90,8 @@ Based on the Boruta SHAP, VIF, and ANOVA analyses, we identified the following s
   | log_Comments          | 1    |
   | Valence               | 2    |
   | Tempo                 | 3    |
+  | Energy                | 3    |
+  | Loudness              | 3    |
   | Key                   | 4    |
 
   The Boruta SHAP algorithm highlighted variables with a ranking of 1 as the most important, such as `Danceability`, `log_Duration_ms`, and `log_Comments`.
