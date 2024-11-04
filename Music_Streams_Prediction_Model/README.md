@@ -14,7 +14,7 @@ This project aims to analyze and predict song popularity based on attributes fro
 - **Data Cleaning**: Handled missing values and reset indices after removal of nulls.
 - **Feature Engineering**:
   - Created binary variables for categorical attributes like `Licensed` and `official_video`.
-  - Transformed highly skewed variables (e.g., `Views`, `Likes`, `Comments`, `Stream`) using logarithmic and square-root transformations.
+  - Transformed highly skewed variables (e.g., `Views`, `Likes`, `Comments`, `Stream`) using logarithmic transformations.
   - Standardized variables for uniform scale, essential for regression modeling.
 
 ### 2. Exploratory Data Analysis (EDA)
