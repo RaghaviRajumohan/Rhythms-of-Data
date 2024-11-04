@@ -23,11 +23,11 @@ Key insights from EDA informed our understanding of the data distributions and c
 
 - **Correlation Heatmap**: Identified strong positive correlation between `Licensed` and `official_video`, suggesting possible redundancy.
 
-     <img src="Assets/Corr_Plot.png" alt="Correlation Heatmap" width="300" style="display: block; margin: 10px auto 20px auto;">
+     <img src="Assets/Corr_Plot.png" alt="Correlation Heatmap" width="400" style="display: block; margin: 10px auto 20px auto;">
 
 - **Histogram and Density Plots**: Provided insights into data distributions for variables such as `Acousticness`, `Liveness`, and `Speechiness`.
 
-     <img src="Assets/Density_Plots.png" alt="Density Plots" width="300" style="display: block; margin: 10px auto 20px auto;">
+     <img src="Assets/Density_Plots.png" alt="Density Plots" width="400" style="display: block; margin: 10px auto 20px auto;">
 
 - **Q-Q Plots**: Examined the normality of various features to assess their distribution characteristics.
 
@@ -36,7 +36,7 @@ Key insights from EDA informed our understanding of the data distributions and c
  
 - **Scatter Plots**: Assessed linearity between `log_Stream` and key predictors, highlighting non-linear patterns for many variables.
   
-     <img src="Assets/Scatter_Plot.png" alt="Density Plots" width="300" style="display: block; margin: 10px auto 20px auto;">
+     <img src="Assets/Scatter_Plot.png" alt="Density Plots" width="400" style="display: block; margin: 10px auto 20px auto;">
 
 ### 3. Feature Selection
 Using Boruta SHAP and Variance Inflation Factor (VIF) analysis, we identified significant predictors:
