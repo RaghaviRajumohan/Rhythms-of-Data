@@ -66,12 +66,12 @@ In developing a regression model to predict `log_Stream`, we explored various mo
    - **Formula of the Baseline Model**:
      
      $$
-     \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{Acousticness} + \beta_2 \cdot \text{Liveness} + \beta_3 \cdot \text{Speechiness} + \beta_4 \cdot \text{Instrumentalness\_logit} + \beta_5 \cdot \text{Licensed} + \beta_6 \cdot \text{log\_Duration\_ms} + \beta_7 \cdot \text{Valence} + \beta_8 \cdot \text{log\_Comments} + \beta_9 \cdot \text{Album\_single}
+     \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{Acousticness} + \beta_2 \cdot \text{Liveness} + \beta_3 \cdot \text{Speechiness} + \beta_4 \cdot \text{Instrumentalness\_logit} + \beta_5 \cdot \text{Licensed} + \beta_6 \cdot \text{log\_Duration\_ms} + \beta_7 \cdot \text{Valence} + \beta_8 \cdot \text{log\_Comments} + \beta_9 \cdot \text{Album\_single} + \epsilon
      $$
 
      where:
      - \( \beta_0 \) is the intercept.
-     - \( \beta_1, \beta_2, \dots, \beta_5 \) are coefficients for each predictor.
+     - \( \beta_1, \beta_2, \dots, \beta_9 \) are coefficients for each predictor.
      - \( \epsilon \) is the error term.
 
    - Initial metrics:
@@ -90,9 +90,9 @@ In developing a regression model to predict `log_Stream`, we explored various mo
      - `log_Duration_ms * Danceability` and `Valence * Liveness` were significant and reduced \( C_p \), enhancing the model's explanatory power.
      - **Updated Formula**:
 
-       \[
+       $$
        \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{log\_Duration\_ms} + \beta_2 \cdot \text{log\_Comments} + \beta_3 \cdot \text{Danceability} + \beta_4 \cdot \text{Valence} + \beta_5 \cdot \text{Liveness} + \beta_6 \cdot (\text{log\_Duration\_ms} \cdot \text{Danceability}) + \beta_7 \cdot (\text{Valence} \cdot \text{Liveness}) + \epsilon
-       \]
+       $$
 
 3. **Adding Quadratic Terms**:
    - Quadratic terms were added to account for non-linear relationships between certain predictors and `log_Stream`.
@@ -103,9 +103,9 @@ In developing a regression model to predict `log_Stream`, we explored various mo
      - Including `Danceability^2` and `Valence^2` further reduced Mallows' \( C_p \) and improved model fit, indicating that moderate values of these variables were optimal for popularity.
      - **Final Formula**:
 
-       \[
+       $$
        \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{log\_Duration\_ms} + \beta_2 \cdot \text{log\_Comments} + \beta_3 \cdot \text{Danceability} + \beta_4 \cdot \text{Valence} + \beta_5 \cdot \text{Liveness} + \beta_6 \cdot (\text{log\_Duration\_ms} \cdot \text{Danceability}) + \beta_7 \cdot (\text{Valence} \cdot \text{Liveness}) + \beta_8 \cdot \text{Danceability}^2 + \beta_9 \cdot \text{Valence}^2 + \epsilon
-       \]
+       $$
 
 #### Final Model Performance
 - **R-squared**: 34.5%, indicating that the model explains 34.5% of the variance in `log_Stream`.
@@ -129,6 +129,7 @@ The final model provides a robust and interpretable framework for predicting son
   <!-- Placeholder for Model Plots -->
   <img src="Assets/model_plots_placeholder.png" alt="Model Diagnostic Plots" width="500" style="display: block; margin-top: 20px; margin-bottom: 20px;">
 </div>
+
 ### 5. Findings and Recommendations
 The analysis highlighted social engagement (`log_Comments`) and track characteristics (`Danceability`, `Valence`) as key drivers of popularity. Industry professionals can use these insights to tailor song attributes for optimal audience engagement.
 
