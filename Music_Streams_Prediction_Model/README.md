@@ -61,7 +61,7 @@ In developing a regression model to predict `log_Stream`, we explored various mo
 #### Step-by-Step Process
 
 1. **Baseline Model**:
-   - We ran a regression of all the selected variables and applied Mallows' $ C_p $ criterion to select our baseline model. This model included only the key features identified through Boruta SHAP and VIF analysis.
+   - We ran a regression of all the selected variables and applied Mallows' \( C_p \) criterion to select our baseline model. This model included only the key features identified through Boruta SHAP and VIF analysis.
    - The baseline model served as a foundation for comparison, allowing us to assess potential improvements by introducing interaction and quadratic terms.
    - **Formula of the Baseline Model**:
      
