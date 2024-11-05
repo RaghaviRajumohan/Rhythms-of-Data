@@ -94,14 +94,13 @@ In developing a regression model to predict `log_Stream`, we explored various mo
      - **Updated Formula**:
 
        ```
-      log_Stream = β₀ + β₁ * Acousticness + β₂ * Liveness + β₃ * Speechiness 
+       log_Stream = β₀ + β₁ * Acousticness + β₂ * Liveness + β₃ * Speechiness 
                    + β₄ * Instrumentalness_logit + β₅ * Licensed 
                    + β₆ * log_Duration_ms + β₇ * Valence 
                    + β₈ * log_Comments + β₉ * Album_single 
                    + β₁₀ * (log_Duration_ms * Liveness) 
                    + β₁₁ * (log_Comments * Licensed) 
                     + β₁₂ * (Album_single * Speechiness) + ε
-
        ```
 
 3. **Adding Quadratic Terms**:
