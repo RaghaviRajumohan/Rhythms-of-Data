@@ -138,5 +138,9 @@ The final model coefficients showed notable associations with `log_Stream`:
 
 - **Curvature Effects**:
   - `log_Duration_ms^2` and `log_Comments^2`: Suggest a non-linear relationship, where moderate values of these features may be optimal for popularity rather than extremely high or low values.
+ 
+
+ <img src="Assets/Quad_effect_plot.png" alt="Curvature Effect" width="400" style="display: block; margin: 10px auto 20px auto;">
+
 
 The final model provides a robust and interpretable framework for predicting song popularity on Spotify, balancing simplicity with predictive power.
