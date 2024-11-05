@@ -66,16 +66,16 @@ In developing a regression model to predict `log_Stream`, we explored various mo
    - **Formula of the Baseline Model**:
      
      ```
-     log_Stream = beta_0 + beta_1 * Acousticness + beta_2 * Liveness + beta_3 * Speechiness 
-                  + beta_4 * Instrumentalness_logit + beta_5 * Licensed 
-                  + beta_6 * log_Duration_ms + beta_7 * Valence 
-                  + beta_8 * log_Comments + beta_9 * Album_single + epsilon
+     log_Stream = β₀ + β₁ * Acousticness + β₂ * Liveness + β₃ * Speechiness 
+                  + β₄ * Instrumentalness_logit + β₅ * Licensed 
+                  + β₆ * log_Duration_ms + β₇ * Valence 
+                  + β₈ * log_Comments + β₉ * Album_single + ε
      ```
 
      where:
-     - `beta_0` is the intercept.
-     - `beta_1, beta_2, ..., beta_9` are coefficients for each predictor.
-     - `epsilon` is the error term.
+     - `β₀` is the intercept.
+     - `β₁, β₂, ..., β₉` are coefficients for each predictor.
+     - `ε` is the error term.
 
    - Initial metrics:
      - **R-squared**: 28.3%
@@ -94,10 +94,10 @@ In developing a regression model to predict `log_Stream`, we explored various mo
      - **Updated Formula**:
 
        ```
-       log_Stream = beta_0 + beta_1 * log_Duration_ms + beta_2 * log_Comments 
-                    + beta_3 * Danceability + beta_4 * Valence + beta_5 * Liveness 
-                    + beta_6 * (log_Duration_ms * Danceability) 
-                    + beta_7 * (Valence * Liveness) + epsilon
+       log_Stream = β₀ + β₁ * log_Duration_ms + β₂ * log_Comments 
+                    + β₃ * Danceability + β₄ * Valence + β₅ * Liveness 
+                    + β₆ * (log_Duration_ms * Danceability) 
+                    + β₇ * (Valence * Liveness) + ε
        ```
 
 3. **Adding Quadratic Terms**:
@@ -110,11 +110,11 @@ In developing a regression model to predict `log_Stream`, we explored various mo
      - **Final Formula**:
 
        ```
-       log_Stream = beta_0 + beta_1 * log_Duration_ms + beta_2 * log_Comments 
-                    + beta_3 * Danceability + beta_4 * Valence + beta_5 * Liveness 
-                    + beta_6 * (log_Duration_ms * Danceability) 
-                    + beta_7 * (Valence * Liveness) 
-                    + beta_8 * Danceability^2 + beta_9 * Valence^2 + epsilon
+       log_Stream = β₀ + β₁ * log_Duration_ms + β₂ * log_Comments 
+                    + β₃ * Danceability + β₄ * Valence + β₅ * Liveness 
+                    + β₆ * (log_Duration_ms * Danceability) 
+                    + β₇ * (Valence * Liveness) 
+                    + β₈ * Danceability^2 + β₉ * Valence^2 + ε
        ```
 
 #### Final Model Performance
