@@ -130,7 +130,7 @@ In developing a regression model to predict `log_Stream`, we explored various mo
 
 - **Bootstrap Estimates of Adjusted R-squared**: To validate the stability of the adjusted R-squared, we performed bootstrap sampling. The histogram below shows the distribution of adjusted R-squared values across bootstrap samples, with the red line representing the original adjusted R-squared value and the yellow line indicating the bootstrap mean adjusted R-squared. This analysis further supports the robustness of the model.
 
-     <img src="Assets/Bootstrap.png" alt="Bootstrap Estimates: Adjusted R-squared" width="600" style="display: block; margin: 10px auto 20px auto;">
+     <img src="Assets/Bootstrap.png" alt="Bootstrap Estimates: Adjusted R-squared" width="400" style="display: block; margin: 10px auto 20px auto;">
 
 #### Model Coefficients and Interpretation
 The final model coefficients showed notable associations with `log_Stream`:
