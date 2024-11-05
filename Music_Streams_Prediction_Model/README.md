@@ -65,14 +65,17 @@ In developing a regression model to predict `log_Stream`, we explored various mo
    - The baseline model served as a foundation for comparison, allowing us to assess potential improvements by introducing interaction and quadratic terms.
    - **Formula of the Baseline Model**:
      
-     $$
-     \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{Acousticness} + \beta_2 \cdot \text{Liveness} + \beta_3 \cdot \text{Speechiness} + \beta_4 \cdot \text{Instrumentalness\_logit} + \beta_5 \cdot \text{Licensed} + \beta_6 \cdot \text{log\_Duration\_ms} + \beta_7 \cdot \text{Valence} + \beta_8 \cdot \text{log\_Comments} + \beta_9 \cdot \text{Album\_single} + \epsilon
-     $$
+     ```
+     log_Stream = beta_0 + beta_1 * Acousticness + beta_2 * Liveness + beta_3 * Speechiness 
+                  + beta_4 * Instrumentalness_logit + beta_5 * Licensed 
+                  + beta_6 * log_Duration_ms + beta_7 * Valence 
+                  + beta_8 * log_Comments + beta_9 * Album_single + epsilon
+     ```
 
      where:
-     - \( \beta_0 \) is the intercept.
-     - \( \beta_1, \beta_2, \dots, \beta_9 \) are coefficients for each predictor.
-     - \( \epsilon \) is the error term.
+     - `beta_0` is the intercept.
+     - `beta_1, beta_2, ..., beta_9` are coefficients for each predictor.
+     - `epsilon` is the error term.
 
    - Initial metrics:
      - **R-squared**: 28.3%
@@ -90,9 +93,12 @@ In developing a regression model to predict `log_Stream`, we explored various mo
      - `log_Duration_ms * Danceability` and `Valence * Liveness` were significant and reduced \( C_p \), enhancing the model's explanatory power.
      - **Updated Formula**:
 
-       $$
-       \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{log\_Duration\_ms} + \beta_2 \cdot \text{log\_Comments} + \beta_3 \cdot \text{Danceability} + \beta_4 \cdot \text{Valence} + \beta_5 \cdot \text{Liveness} + \beta_6 \cdot (\text{log\_Duration\_ms} \cdot \text{Danceability}) + \beta_7 \cdot (\text{Valence} \cdot \text{Liveness}) + \epsilon
-       $$
+       ```
+       log_Stream = beta_0 + beta_1 * log_Duration_ms + beta_2 * log_Comments 
+                    + beta_3 * Danceability + beta_4 * Valence + beta_5 * Liveness 
+                    + beta_6 * (log_Duration_ms * Danceability) 
+                    + beta_7 * (Valence * Liveness) + epsilon
+       ```
 
 3. **Adding Quadratic Terms**:
    - Quadratic terms were added to account for non-linear relationships between certain predictors and `log_Stream`.
@@ -103,9 +109,13 @@ In developing a regression model to predict `log_Stream`, we explored various mo
      - Including `Danceability^2` and `Valence^2` further reduced Mallows' \( C_p \) and improved model fit, indicating that moderate values of these variables were optimal for popularity.
      - **Final Formula**:
 
-       $$
-       \text{log\_Stream} = \beta_0 + \beta_1 \cdot \text{log\_Duration\_ms} + \beta_2 \cdot \text{log\_Comments} + \beta_3 \cdot \text{Danceability} + \beta_4 \cdot \text{Valence} + \beta_5 \cdot \text{Liveness} + \beta_6 \cdot (\text{log\_Duration\_ms} \cdot \text{Danceability}) + \beta_7 \cdot (\text{Valence} \cdot \text{Liveness}) + \beta_8 \cdot \text{Danceability}^2 + \beta_9 \cdot \text{Valence}^2 + \epsilon
-       $$
+       ```
+       log_Stream = beta_0 + beta_1 * log_Duration_ms + beta_2 * log_Comments 
+                    + beta_3 * Danceability + beta_4 * Valence + beta_5 * Liveness 
+                    + beta_6 * (log_Duration_ms * Danceability) 
+                    + beta_7 * (Valence * Liveness) 
+                    + beta_8 * Danceability^2 + beta_9 * Valence^2 + epsilon
+       ```
 
 #### Final Model Performance
 - **R-squared**: 34.5%, indicating that the model explains 34.5% of the variance in `log_Stream`.
@@ -125,10 +135,7 @@ The final model coefficients showed notable associations with `log_Stream`:
 
 The final model provides a robust and interpretable framework for predicting song popularity on Spotify, balancing simplicity with predictive power.
 
-<div align="center">
-  <!-- Placeholder for Model Plots -->
-  <img src="Assets/model_plots_placeholder.png" alt="Model Diagnostic Plots" width="500" style="display: block; margin-top: 20px; margin-bottom: 20px;">
-</div>
+---
 
 ### 5. Findings and Recommendations
 The analysis highlighted social engagement (`log_Comments`) and track characteristics (`Danceability`, `Valence`) as key drivers of popularity. Industry professionals can use these insights to tailor song attributes for optimal audience engagement.
