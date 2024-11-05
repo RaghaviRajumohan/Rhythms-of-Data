@@ -63,6 +63,7 @@ In developing a regression model to predict `log_Stream`, we explored various mo
 1. **Baseline Model**:
    - We ran a regression of all the selected variables and applied Mallows' \( C_p \) criterion to select our baseline model. This model included only the key features identified through Boruta SHAP and VIF analysis.
    - The baseline model served as a foundation for comparison, allowing us to assess potential improvements by introducing interaction and quadratic terms.
+     
    - **Formula of the Baseline Model**:
      
      ```
@@ -113,11 +114,16 @@ In developing a regression model to predict `log_Stream`, we explored various mo
      - **Final Formula**:
 
        ```
-       log_Stream = β₀ + β₁ * log_Duration_ms + β₂ * log_Comments 
-                    + β₃ * Danceability + β₄ * Valence + β₅ * Liveness 
-                    + β₆ * (log_Duration_ms * Danceability) 
-                    + β₇ * (Valence * Liveness) 
-                    + β₈ * Danceability^2 + β₉ * Valence^2 + ε
+       log_Stream = β₀ + β₁ * Acousticness + β₂ * Liveness + β₃ * Speechiness 
+             + β₄ * Instrumentalness_logit + β₅ * Licensed 
+             + β₆ * log_Duration_ms + β₇ * Valence 
+             + β₈ * log_Comments + β₉ * Album_single 
+             + β₁₀ * (log_Duration_ms * Liveness) 
+             + β₁₁ * (log_Comments * Licensed) 
+             + β₁₂ * (Album_single * Speechiness) 
+             + β₁₃ * (log_Duration_ms)^2 
+             + β₁₄ * (log_Comments)^2 + ε
+
        ```
 
 #### Final Model Performance
