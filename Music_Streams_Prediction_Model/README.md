@@ -1,4 +1,3 @@
-
 # Music Streams Prediction Model
 
 This project aims to analyze and predict song popularity based on attributes from Spotify and YouTube data. By leveraging diverse musical, technical, and social metrics, we sought to uncover factors influencing a song’s popularity, represented by the number of streams on Spotify. 
@@ -33,7 +32,6 @@ Key insights from EDA informed our understanding of the data distributions and c
 
      <img src="Assets/qq_plots.png" alt="Q-Q Plots" width="400" style="display: block; margin: 10px auto 20px auto;">
 
- 
 - **Scatter Plots**: Assessed linearity between `log_Stream` and key predictors, highlighting non-linear patterns for many variables.
   
      <img src="Assets/Scatter_Plot.png" alt="Density Plots" width="400" style="display: block; margin: 10px auto 20px auto;">
@@ -86,12 +84,12 @@ In developing a regression model to predict `log_Stream`, we explored various mo
 2. **Adding Interaction Terms**:
    - Interaction terms were introduced to capture the combined effects of specific pairs of predictors on `log_Stream`.
    - **Tested Interactions**:
-     - `log_Duration_ms * Danceability`
-     - `Valence * Liveness`
-     - `log_Comments * Speechiness`
+     - `log_Duration_ms * Liveness`
+     - `log_Comments * Licensed`
+     - `Album_single * Speechiness`
    - **Evaluation**:
      - Each interaction term was evaluated individually using Mallows' \( C_p \), with lower \( C_p \) values indicating improved fit.
-     - `log_Duration_ms * Danceability` and `Valence * Liveness` were significant and reduced \( C_p \), enhancing the model's explanatory power.
+     - `log_Duration_ms * Liveness` and `log_Comments * Licensed` were significant and reduced \( C_p \), enhancing the model's explanatory power.
      - **Updated Formula**:
 
        ```
@@ -101,16 +99,16 @@ In developing a regression model to predict `log_Stream`, we explored various mo
                    + β₈ * log_Comments + β₉ * Album_single 
                    + β₁₀ * (log_Duration_ms * Liveness) 
                    + β₁₁ * (log_Comments * Licensed) 
-                    + β₁₂ * (Album_single * Speechiness) + ε
+                   + β₁₂ * (Album_single * Speechiness) + ε
        ```
 
 3. **Adding Quadratic Terms**:
    - Quadratic terms were added to account for non-linear relationships between certain predictors and `log_Stream`.
    - **Tested Quadratic Terms**:
-     - `Danceability^2`
-     - `Valence^2`
+     - `log_Duration_ms^2`
+     - `log_Comments^2`
    - **Evaluation**:
-     - Including `Danceability^2` and `Valence^2` further reduced Mallows' \( C_p \) and improved model fit, indicating that moderate values of these variables were optimal for popularity.
+     - Including `log_Duration_ms^2` and `log_Comments^2` further reduced Mallows' \( C_p \) and improved model fit, indicating that moderate values of these variables were optimal for popularity.
      - **Final Formula**:
 
        ```
@@ -123,7 +121,6 @@ In developing a regression model to predict `log_Stream`, we explored various mo
              + β₁₂ * (Album_single * Speechiness) 
              + β₁₃ * (log_Duration_ms)^2 
              + β₁₄ * (log_Comments)^2 + ε
-
        ```
 
 #### Final Model Performance
@@ -137,17 +134,9 @@ The final model coefficients showed notable associations with `log_Stream`:
 - **Positive Associations**:
   - `log_Comments`: Higher values are associated with increased stream counts, emphasizing the impact of social engagement.
   - `log_Duration_ms`: Longer song durations have a positive effect on streams.
-  - **Interaction** (`log_Duration_ms * Danceability`): Indicates that songs with higher danceability benefit even more from longer durations.
+  - **Interaction** (`log_Duration_ms * Liveness`): Indicates that songs with higher liveness benefit even more from longer durations.
 
 - **Curvature Effects**:
-  - `Danceability^2` and `Valence^2`: Suggest a non-linear relationship, where moderate values of these features may be optimal for popularity rather than extremely high or low values.
+  - `log_Duration_ms^2` and `log_Comments^2`: Suggest a non-linear relationship, where moderate values of these features may be optimal for popularity rather than extremely high or low values.
 
 The final model provides a robust and interpretable framework for predicting song popularity on Spotify, balancing simplicity with predictive power.
-
----
-
-### 5. Findings and Recommendations
-The analysis highlighted social engagement (`log_Comments`) and track characteristics (`Danceability`, `Valence`) as key drivers of popularity. Industry professionals can use these insights to tailor song attributes for optimal audience engagement.
-
-## Conclusion
-This project successfully developed a model to predict music popularity, providing actionable insights for music production and marketing. Further enhancements could include integrating additional social engagement metrics or exploring non-linear modeling techniques for improved accuracy.
