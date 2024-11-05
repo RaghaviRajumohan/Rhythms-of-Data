@@ -123,7 +123,7 @@ In developing a regression model to predict `log_Stream`, we explored various mo
              + β₁₄ * (log_Comments)^2 + ε
        ```
 
-<img src="Assets/Results.png" alt="Results" width="400" style="display: block; margin: 10px auto 20px auto;">
+<img src="Assets/Results.png" alt="Results" width="600" style="display: block; margin: 10px auto 20px auto;">
 
 
 #### Final Model Performance
