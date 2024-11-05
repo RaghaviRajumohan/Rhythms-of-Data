@@ -128,6 +128,10 @@ In developing a regression model to predict `log_Stream`, we explored various mo
 - **Adjusted R-squared**: 33.8%, confirming that the model maintains explanatory power without overfitting.
 - **F-statistic**: High significance level (p < 0.001), confirming the overall reliability of the model.
 
+- **Bootstrap Estimates of Adjusted R-squared**: To validate the stability of the adjusted R-squared, we performed bootstrap sampling. The histogram below shows the distribution of adjusted R-squared values across bootstrap samples, with the red line representing the original adjusted R-squared value and the yellow line indicating the bootstrap mean adjusted R-squared. This analysis further supports the robustness of the model.
+
+     <img src="Assets/Bootstrap.png" alt="Bootstrap Estimates: Adjusted R-squared" width="600" style="display: block; margin: 10px auto 20px auto;">
+
 #### Model Coefficients and Interpretation
 The final model coefficients showed notable associations with `log_Stream`:
 
@@ -137,10 +141,8 @@ The final model coefficients showed notable associations with `log_Stream`:
   - **Interaction** (`log_Duration_ms * Liveness`): Indicates that songs with higher liveness benefit even more from longer durations.
 
 - **Curvature Effects**:
-  - `log_Duration_ms^2` and `log_Comments^2`: Suggest a non-linear relationship, where moderate values of these features may be optimal for popularity rather than extremely high or low values.
- 
+  - `log_Duration_ms^2` and `log_Comments^2`: These quadratic terms reveal a non-linear relationship with `log_Stream`, where moderate values of `log_Duration_ms` are associated with higher stream counts, while `log_Comments` shows a consistently positive trend with increasing values, indicating that higher comment engagement significantly boosts popularity.
 
- <img src="Assets/Quad_effect_plot.png" alt="Curvature Effect" width="600" style="display: block; margin: 10px auto 20px auto;">
-
+     <img src="Assets/Quad_effect_plot.png" alt="Curvature Effect" width="600" style="display: block; margin: 10px auto 20px auto;">
 
 The final model provides a robust and interpretable framework for predicting song popularity on Spotify, balancing simplicity with predictive power.
