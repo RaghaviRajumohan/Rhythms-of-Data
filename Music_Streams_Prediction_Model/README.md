@@ -123,6 +123,9 @@ In developing a regression model to predict `log_Stream`, we explored various mo
              + β₁₄ * (log_Comments)^2 + ε
        ```
 
+<img src="Assets/Results.png" alt="Results" width="400" style="display: block; margin: 10px auto 20px auto;">
+
+
 #### Final Model Performance
 - **R-squared**: 34.5%, indicating that the model explains 34.5% of the variance in `log_Stream`.
 - **Adjusted R-squared**: 33.8%, confirming that the model maintains explanatory power without overfitting.
