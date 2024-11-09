@@ -11,4 +11,5 @@ These projects highlight the diverse applications of data science within the mus
 
 | Project Name | Description |    
 |---|---|
-| 🎶 [Music Streams Prediction Model](https://github.com/RaghaviRajumohan/Rhythms-of-Data/tree/main/Music_Streams_Prediction_Model) |This project builds regression models to predict music streaming numbers by analysing key factors that drive listener engagement, helping the understand and anticipate streaming trends.  | 
+| 🎶 [Music Streams Prediction Model](https://github.com/RaghaviRajumohan/Rhythms-of-Data/tree/main/Music_Streams_Prediction_Model) | This project builds regression models to predict music streaming numbers by analyzing key factors that drive listener engagement, helping to understand and anticipate streaming trends. | 
+| 🎸 [Music Genre Classification Model](https://github.com/RaghaviRajumohan/Rhythms-of-Data/tree/main/Music_Genre_Classification_Model) | This project leverages machine learning techniques such as K-Nearest Neighbors (KNN), Random Forest, and Convolutional Neural Networks (CNN) to classify music into genres based on detailed audio features. By examining aspects like MFCCs, spectral centroid, and rhythmic properties, the model categorizes music with precision and helps in enhancing personalized recommendations, playlist curation, and trend analysis in the music industry. |
