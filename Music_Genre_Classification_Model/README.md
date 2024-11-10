@@ -1,4 +1,3 @@
-
 # Music Genre Classification Model
 
 ## Overview
@@ -34,13 +33,13 @@ Seven key features were chosen based on their role in capturing unique sound att
 
 To illustrate genre-specific traits, visualizations of features such as waveform and mel-spectrogram were created, revealing patterns across genres like jazz and rock.
 
-   ![Audio Feature Visualizations](Assets/Audio_features.png)
+<img src="Assets/Audio_features.png" alt="Audio Feature Visualizations" width="400" style="display: block; margin: 10px auto 20px auto;">
 
 ### 3. Exploratory Data Analysis (EDA)
 
 **Genre-Based Distribution Analysis**: Histograms of features like Acousticness and Danceability by genre revealed distinct patterns, supporting feature relevance for classification.
 
-   ![EDA by Genre](Assets/EDA.png)
+<img src="Assets/EDA.png" alt="EDA by Genre" width="400" style="display: block; margin: 10px auto 20px auto;">
 
 ### 4. Model Development and Comparison
 
@@ -50,25 +49,25 @@ Three models (KNN, Random Forest, and CNN) were developed to evaluate genre pred
 - **Random Forest**: Performed comparably, with high accuracy on distinctive genres.
 - **CNN**: Required more complex tuning, but showed potential with further development.
 
-   ![Model Comparison Table](Assets/table.png)
+<img src="Assets/table.png" alt="Model Comparison Table" width="400" style="display: block; margin: 10px auto 20px auto;">
 
 ### 5. Model Metrics and Evaluation
 
 The KNN model emerged as the most effective, with high scores across accuracy, precision, and recall, making it the preferred model for genre classification. The confusion matrix below provides insights into genre-specific misclassifications, particularly in closely related genres.
 
-   ![Confusion Matrix](Assets/matrix.png)
+<img src="Assets/matrix.png" alt="Confusion Matrix" width="400" style="display: block; margin: 10px auto 20px auto;">
 
 ### 6. Decision Boundary Visualization
 
 The KNN decision boundaries for genre classification showcase the separation between different genres using PCA-reduced components.
 
-   ![KNN Decision Boundaries](Assets/decision.png)
+<img src="Assets/decision.png" alt="KNN Decision Boundaries" width="400" style="display: block; margin: 10px auto 20px auto;">
 
 ### 7. Key Features for Classification
 
 Using permutation importance, the top features contributing to genre classification were identified, highlighting the model’s reliance on attributes like MFCC and spectral features.
 
-   ![Important Features](Assets/Imp_features.png)
+<img src="Assets/Imp_features.png" alt="Important Features" width="400" style="display: block; margin: 10px auto 20px auto;">
 
 ---
 
