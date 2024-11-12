@@ -1,4 +1,4 @@
-<img src="Assets/doechii.png" alt="Doechii YouTube Comment Sentiment Analysis" width="1000" style="display: block; margin: 10px auto 20px auto;">
+<img src="Assets/doechii.png" alt="Doechii YouTube Comment Sentiment Analysis" width="800" style="display: block; margin: 10px auto 20px auto;">
 
 
 
