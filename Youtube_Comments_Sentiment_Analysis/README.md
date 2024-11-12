@@ -1,4 +1,4 @@
-<img src="Assets/doechii.png" alt="Doechii YouTube Comment Sentiment Analysis" width="600" style="display: block; margin: 10px auto 20px auto;">
+<img src="Assets/doechii.png" alt="Doechii YouTube Comment Sentiment Analysis" width="800" style="display: block; margin: 10px auto 20px auto;">
 
 
 
@@ -12,7 +12,7 @@ This project analyzes the sentiment of comments on Doechii's YouTube music video
    - Analyze the sentiment of YouTube comments to understand the audience's emotional response to Doechii's videos.
    - Leverage sentiment scores and engagement metrics to predict video view counts.
 - **Data Source**: 
-   - YouTube comments and metadata from Doechii's official YouTube channel.
+   - YouTube API for extracting comments, video statistics, and engagement data from Doechii's channel.
 
 ## Project Steps
 
