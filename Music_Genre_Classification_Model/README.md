@@ -2,11 +2,11 @@
 
 ## Overview
 
-In today’s highly competitive music industry, accurate genre classification is essential for streaming platforms, record labels, and marketers to better understand, organize, and promote musical content. By categorizing songs based on their genre, industry professionals can optimize music recommendations, enhance listener engagement, and tailor marketing strategies to target specific audience demographics. This project explores a machine learning approach to genre classification, leveraging models such as K-Nearest Neighbors (KNN), Random Forest, and Convolutional Neural Networks (CNN). By analyzing a song's musical features—such as Mel-frequency Cepstral Coefficients (MFCCs), tempo, and spectral attributes—this model provides valuable insights into genre characteristics, aiding in accurate music categorization and recommendation.
+In today’s highly competitive music industry, accurate genre classification is essential for streaming platforms, record labels, and marketers to better understand, organize, and promote musical content. By categorizing songs based on their genre, industry professionals can optimize music recommendations, enhance listener engagement, and tailor marketing strategies to target specific audience demographics. 
 
 ## Project Objective
 
-The primary objective of this project is to develop a robust music genre classification model that can accurately predict a song’s genre based on extracted audio features. This project evaluates the performance of multiple classification models, including KNN, Random Forest, and CNN, to determine the most effective approach for genre prediction. The analysis aims to identify key audio features that influence classification accuracy, ultimately contributing to a more refined understanding of genre-based audio attributes.
+This project explores machine learning techniques for music genre classification by leveraging models such as K-Nearest Neighbors (KNN), Random Forest, and Convolutional Neural Networks (CNN) to analyze a song’s audio features—including Mel-frequency Cepstral Coefficients (MFCCs), tempo, and spectral attributes. By evaluating the performance of these models, the project aims to identify the most effective approach for accurate genre prediction and to pinpoint key audio characteristics that influence classification accuracy.
 
 ---
 
