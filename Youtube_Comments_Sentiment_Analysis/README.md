@@ -34,7 +34,7 @@ This project analyzes the sentiment of comments on Doechii's YouTube music video
    - **Sentiment Distribution**: Illustrated the distribution of positive, neutral, and negative comments.
    - **Word Clouds**: Created word clouds for positive and negative sentiments, highlighting common themes in fan feedback.
    
-   <img src="Assets/word_cloud.png" alt="Positive and Negative Word Clouds" width="600" style="display: block; margin: 10px auto 20px auto;">
+   <img src="Assets/word_cloud.png" alt="Positive and Negative Word Clouds" width="400" style="display: block; margin: 10px auto 20px auto;">
    
 
 ### 4. Regression Analysis
