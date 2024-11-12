@@ -2,11 +2,11 @@
 
 ## Overview
 
-In an era of vast musical diversity, genre classification is essential for streaming platforms and record labels to organize, recommend, and market songs. This project presents a K-Nearest Neighbors (KNN) model for predicting a song’s genre based on a wide array of musical features like MFCCs, tempo, and spectral attributes. The model aids in identifying genre characteristics, providing insights into audio features that influence classification accuracy.
+In today’s highly competitive music industry, accurate genre classification is essential for streaming platforms, record labels, and marketers to better understand, organize, and promote musical content. By categorizing songs based on their genre, industry professionals can optimize music recommendations, enhance listener engagement, and tailor marketing strategies to target specific audience demographics. This project explores a machine learning approach to genre classification, leveraging models such as K-Nearest Neighbors (KNN), Random Forest, and Convolutional Neural Networks (CNN). By analyzing a song's musical features—such as Mel-frequency Cepstral Coefficients (MFCCs), tempo, and spectral attributes—this model provides valuable insights into genre characteristics, aiding in accurate music categorization and recommendation.
 
 ## Project Objective
 
-Develop a robust music genre classification model using KNN, Random Forest, and CNN to evaluate the impact of audio features on genre prediction.
+The primary objective of this project is to develop a robust music genre classification model that can accurately predict a song’s genre based on extracted audio features. This project evaluates the performance of multiple classification models, including KNN, Random Forest, and CNN, to determine the most effective approach for genre prediction. The analysis aims to identify key audio features that influence classification accuracy, ultimately contributing to a more refined understanding of genre-based audio attributes.
 
 ---
 
