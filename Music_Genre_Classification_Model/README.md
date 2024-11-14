@@ -11,13 +11,12 @@ This project explores machine learning techniques for music genre classification
 ---
 ### Key Python Packages and Tools
 
-#### Data Manipulation and Cleaning: ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![StandardScaler](https://img.shields.io/badge/StandardScaler-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![KNN](https://img.shields.io/badge/KNN-3A86FF?style=flat-square&logo=scikit-learn&logoColor=white)
-
-
+#### Data Manipulation and Cleaning: ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![StandardScaler](https://img.shields.io/badge/StandardScaler-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) 
 
 #### Audio Processing and Feature Extraction: ![Librosa](https://img.shields.io/badge/Librosa-3776AB?style=flat-square)
 
-#### Machine Learning and Model Building: ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![TensorFlow Keras](https://img.shields.io/badge/TensorFlow%20Keras-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![Statsmodels](https://img.shields.io/badge/Statsmodels-00A3E0?style=flat-square) ![Random Forest](https://img.shields.io/badge/Random%20Forest-4CAF50?style=flat-square&logo=tree&logoColor=white)
+#### Machine Learning and Model Building: ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![TensorFlow Keras](https://img.shields.io/badge/TensorFlow%20Keras-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![Statsmodels](https://img.shields.io/badge/Statsmodels-00A3E0?style=flat-square) ![Random Forest](https://img.shields.io/badge/Random%20Forest-4CAF50?style=flat-square&logo=tree&logoColor=white) ![KNN](https://img.shields.io/badge/KNN-3A86FF?style=flat-square&logo=scikit-learn&logoColor=white)
+
 
 
 #### Data Visualization ![Matplotlib](https://img.shields.io/badge/Matplotlib-007ACC?style=flat-square&logo=matplotlib&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat-square)
