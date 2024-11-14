@@ -22,7 +22,7 @@ This project analyzes the sentiment of comments on Doechii's YouTube music video
 
 **Data Extraction and API Interaction:** ![Google API Client](https://img.shields.io/badge/Google%20API%20Client-4285F4?style=flat-square&logo=google&logoColor=white)
 
-#### Data Manipulation and Cleaning: ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)  ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+**Data Manipulation and Cleaning:** ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)  ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
 #### Natural Language Processing (NLP) and Sentiment Analysis: ![NLTK](https://img.shields.io/badge/NLTK-85DDFF?style=flat-square&logo=python&logoColor=white) ![VADER Sentiment Analyzer](https://img.shields.io/badge/VADER%20Sentiment%20Analyzer-FF4500?style=flat-square&logo=python&logoColor=white) ![re](https://img.shields.io/badge/re-007ACC?style=flat-square&logo=python&logoColor=white)
 
