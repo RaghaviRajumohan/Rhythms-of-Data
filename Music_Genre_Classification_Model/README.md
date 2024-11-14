@@ -16,7 +16,7 @@ This project explores machine learning techniques for music genre classification
 
 #### Audio Processing and Feature Extraction: ![Librosa](https://img.shields.io/badge/Librosa-3776AB?style=flat-square)
 
-#### Machine Learning and Model Building: ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![TensorFlow Keras](https://img.shields.io/badge/TensorFlow%20Keras-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![Statsmodels](https://img.shields.io/badge/Statsmodels-00A3E0?style=flat-square) ![StandardScaler](https://img.shields.io/badge/StandardScaler-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+#### Machine Learning and Model Building: ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![TensorFlow Keras](https://img.shields.io/badge/TensorFlow%20Keras-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![Statsmodels](https://img.shields.io/badge/Statsmodels-00A3E0?style=flat-square) !
 
 #### Data Visualization ![Matplotlib](https://img.shields.io/badge/Matplotlib-007ACC?style=flat-square&logo=matplotlib&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat-square)
 
