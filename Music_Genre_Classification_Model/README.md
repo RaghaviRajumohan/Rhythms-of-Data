@@ -11,7 +11,8 @@ This project explores machine learning techniques for music genre classification
 ---
 ### Key Python Packages and Tools
 
-#### Data Manipulation and Cleaning: ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![StandardScaler](https://img.shields.io/badge/StandardScaler-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+#### Data Manipulation and Cleaning: ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![StandardScaler](https://img.shields.io/badge/StandardScaler-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![KNN](https://img.shields.io/badge/KNN-3A86FF?style=flat-square&logo=scikit-learn&logoColor=white)
+
 
 
 #### Audio Processing and Feature Extraction: ![Librosa](https://img.shields.io/badge/Librosa-3776AB?style=flat-square)
