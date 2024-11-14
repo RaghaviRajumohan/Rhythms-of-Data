@@ -9,6 +9,35 @@ In today’s highly competitive music industry, accurate genre classification is
 This project explores machine learning techniques for music genre classification by leveraging models such as K-Nearest Neighbors (KNN), Random Forest, and Convolutional Neural Networks (CNN) to analyze a song’s audio features—including Mel-frequency Cepstral Coefficients (MFCCs), tempo, and spectral attributes. By evaluating the performance of these models, the project aims to identify the most effective approach for accurate genre prediction and to pinpoint key audio characteristics that influence classification accuracy.
 
 ---
+### Key Python Packages and Tools
+
+#### Data Manipulation and Cleaning
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+
+#### Audio Processing and Feature Extraction
+![Librosa](https://img.shields.io/badge/Librosa-3776AB?style=flat-square)
+
+#### Machine Learning and Model Building
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![TensorFlow Keras](https://img.shields.io/badge/TensorFlow%20Keras-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
+
+#### Feature Selection
+![BorutaPy](https://img.shields.io/badge/BorutaPy-3776AB?style=flat-square)
+![BorutaShap](https://img.shields.io/badge/BorutaShap-3776AB?style=flat-square)
+
+#### Statistical Modeling and Analysis
+![Statsmodels](https://img.shields.io/badge/Statsmodels-00A3E0?style=flat-square)
+
+#### Data Visualization
+![Matplotlib](https://img.shields.io/badge/Matplotlib-007ACC?style=flat-square&logo=matplotlib&logoColor=white)
+![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat-square)
+
+#### Preprocessing and Standardization
+![StandardScaler](https://img.shields.io/badge/StandardScaler-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+
+
+---
 
 ## Project Steps
 
