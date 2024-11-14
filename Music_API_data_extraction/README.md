@@ -99,3 +99,18 @@ This consolidated dataset empowers users to perform comprehensive analysis, enab
 
 ---
 
+
+
+#### Spotify API
+- **Artist Data Table**: | Artist ID | Name | Genres | Popularity | Followers |  
+  Basic metadata about artists, including popularity metrics and genre classification.
+- **Album Data Table**: | Album ID | Album Name | Release Date | Total Tracks | Album Type |  
+  Information on albums released by the artist.
+- **Track Data Table**: | Track ID | Track Name | Duration (ms) | Explicit | Track Number | Popularity | Playlist Count | Preview URL |  
+  Details about individual tracks, including popularity and preview links.
+- **Playlist Data Table**: | Playlist ID | Name | Owner | Description | Total Tracks | Followers | Collaborative | Public |  
+  Metadata about playlists featuring the artist.
+- **Audio Features Table**: | Track ID | Track Name | Danceability | Energy | Key | Loudness | Speechiness | Acousticness | Instrumentalness | Liveness | Valence | Tempo | Duration (ms) |  
+  Contains audio attributes of tracks for analysis of sound characteristics.
+
+
