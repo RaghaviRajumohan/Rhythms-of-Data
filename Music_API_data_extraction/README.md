@@ -43,7 +43,7 @@ The **Combined Data Table** aggregates information from multiple APIs, enabling 
 
 <img src="Assets/combined_table.png" alt="APIs" width="800" style="display: block; margin: 10px auto 20px auto;">
 
-This consolidated dataset empowers users to perform comprehensive analysis, enabling comparisons and trend insights across different platforms and datasets. The **Combined Data Table** is particularly valuable for professionals who need a multi-dimensional view of artist performance and trends across platforms, enabling richer insights and actionable analysis.
+This consolidated dataset empowers users to perform comprehensive analysis, enabling comparisons and trend insights across different platforms and datasets. This is particularly valuable for professionals who need a multi-dimensional view of artist performance and trends across platforms, enabling richer insights and actionable analysis.
 
 
 ### Individual Data Tables by API
@@ -73,4 +73,29 @@ This consolidated dataset empowers users to perform comprehensive analysis, enab
 - **Artist Data Table**: Artist metadata including name, profile, genres, styles, and URLs.
 - **Releases Data Table**: Information on the artist's releases, including title, format, year, label, and user rating.
 - **Label Data Table**: Details on labels associated with each release, with fields for release title, label name, catalog number, and release year.
+
+
+
+### Individual Data Tables by API
+
+| API          | Table Name                 | Columns                                                                                                    |
+|--------------|----------------------------|------------------------------------------------------------------------------------------------------------|
+| **Spotify**  | Artist Data Table          | Artist ID, Name, Genres, Popularity, Followers                                                             |
+|              | Album Data Table           | Album ID, Album Name, Release Date, Total Tracks, Album Type                                               |
+|              | Track Data Table           | Track ID, Track Name, Duration (ms), Explicit, Track Number, Popularity, Playlist Count, Preview URL       |
+|              | Playlist Data Table        | Playlist ID, Name, Owner, Description, Total Tracks, Followers, Collaborative, Public                      |
+|              | Audio Features Table       | Track ID, Track Name, Danceability, Energy, Key, Loudness, Speechiness, Acousticness, Instrumentalness, Liveness, Valence, Tempo, Duration (ms) |
+| **YouTube**  | Video Data Table           | Video ID, Title, Published Date, Tags, Category ID, View Count, Like Count, Comment Count, Like-to-View Ratio, Comment-to-View Ratio, Duration |
+|              | Channel Data Table         | Channel ID, Playlist Titles, Total Videos                                                                  |
+|              | Comments Data Table        | Comment ID, Video ID, Author Display Name, Comment Text, Like Count, Published Date, Updated Date          |
+| **Genius**   | Song Lyrics Data Table     | Track Name, Full Title, Lyrics, Genius Song ID, URL, Primary Artist                                        |
+|              | Artist Data Table          | Artist ID, Name, Profile URL, Followers Count, Image URL                                                   |
+| **Ticketmaster** | Event Data Table      | Event Name, Event Type, Date, Time, Event URL, Venue Name, City, State, Country, Min Price, Max Price, Currency, Genre, Image URL |
+|              | Venue Data Table           | Venue Name, City, General Info, Child Info, Accessible Seating                                             |
+|              | Event Classification Table | Event Name, Genre, Segment, SubGenre, Type                                                                 |
+| **Discogs**  | Artist Data Table          | Artist Name, Profile, Genres, Styles, URLs                                                                 |
+|              | Releases Data Table        | Title, Format, Year, Label, Type, Resource URL, User Rating                                                |
+|              | Label Data Table           | Release Title, Label Name, Catalog Number, Year                                                            |
+
+---
 
