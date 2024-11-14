@@ -9,7 +9,7 @@ This project aims to analyze and predict song popularity based on attributes fro
 
 ## Project Steps
 
-### 1. Data Loading and Preprocessing (Tools: ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)    ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+### 1. Data Loading and Preprocessing ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)    ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
 - **Data Cleaning**: Handled missing values and reset indices after removal of nulls.
 - **Feature Engineering**:
