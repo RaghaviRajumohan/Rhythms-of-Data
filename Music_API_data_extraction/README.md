@@ -102,7 +102,9 @@ This consolidated dataset empowers users to perform comprehensive analysis, enab
 
 
 #### Spotify API
-- **Artist Data Table**: | Artist ID | Name | Genres | Popularity | Followers |  
+- **Artist Data Table**:
+  | Artist ID | Name | Genres | Popularity | Followers |
+  
   Basic metadata about artists, including popularity metrics and genre classification.
 - **Album Data Table**: | Album ID | Album Name | Release Date | Total Tracks | Album Type |  
   Information on albums released by the artist.
