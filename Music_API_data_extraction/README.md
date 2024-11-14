@@ -100,97 +100,91 @@ This consolidated dataset empowers users to perform comprehensive analysis, enab
 ---
 
 
-
 ## Extracted Data Tables
 
-The project generates various data tables that provide in-depth insights into artist profiles, audience engagement, event information, and more. Below is a summary of the key data tables from each API, along with a **Combined Data Table** that merges insights across platforms.
+The project generates data tables with insights into artist profiles, audience engagement, event info, and more. Below is a summary of the key tables from each API, including a Combined Data Table that integrates insights across platforms.
 
-### Combined Data Table (Key Feature)
-The **Combined Data Table** aggregates information from multiple APIs, enabling a unified view of an artist's profile, popularity, and engagement across platforms. This table facilitates cross-platform analysis by merging key attributes from Spotify, YouTube, Genius, Ticketmaster, and Discogs into a single, cohesive dataset.
+### Combined Data Table
 
-| Artist Name    | Genre               | Popularity | Followers | View Count | Like-to-View Ratio | Lyrics                               | Event Date  | Venue                | User Rating |
-|----------------|---------------------|------------|-----------|------------|---------------------|--------------------------------------|-------------|----------------------|-------------|
-| The Beatles    | Rock, Pop           | 85         | 25000000  | 5000000    | 0.01               | "Yesterday, all my troubles..."      | 2024-05-10  | Madison Square Garden | 4.8         |
+| Artist       | Genre      | Popularity | Followers | Views    | Like/View | Lyrics                       | Event Date | Venue                 | Rating |
+|--------------|------------|------------|-----------|----------|-----------|------------------------------|------------|-----------------------|--------|
+| The Beatles  | Rock, Pop  | 85         | 25M       | 5M       | 0.01      | "Yesterday, all my troubles…" | 2024-05-10 | Madison Square Garden | 4.8    |
 
 ### Individual Data Tables by API
 
 #### Spotify API
 
-| Artist ID        | Name          | Genres           | Popularity | Followers |
-|------------------|---------------|------------------|------------|-----------|
-| 3WrFJ7ztbogyGnTHbHJFl2 | The Beatles   | Rock, British Invasion | 85         | 28745842  |
+| Artist ID    | Name       | Genre          | Popularity | Followers |
+|--------------|------------|----------------|------------|-----------|
+| 3WrFJ7zt     | The Beatles| Rock, British Invasion | 85   | 28.7M     |
 
-| Album ID         | Album Name              | Release Date | Total Tracks | Album Type |
-|------------------|-------------------------|--------------|--------------|------------|
-| 2K1AefZdAvHTshakGZf3hr | Abbey Road               | 1969-09-26   | 17           | album      |
+| Album ID     | Album Name     | Release Date | Tracks | Type |
+|--------------|----------------|--------------|--------|------|
+| 2K1AefZ      | Abbey Road     | 1969-09-26   | 17     | album|
 
-| Track ID         | Track Name           | Duration (ms) | Explicit | Track Number | Popularity | Playlist Count | Preview URL |
-|------------------|----------------------|---------------|----------|--------------|------------|----------------|-------------|
-| 7gh6YB8fnybP6N5zBaH4 | Come Together       | 259200        | False    | 1            | 85         | 150            | [Preview Link](#) |
+| Track ID     | Track Name     | Duration | Explicit | Track No. | Popularity | Playlist Count | Preview URL    |
+|--------------|----------------|----------|----------|-----------|------------|----------------|----------------|
+| 7gh6YB       | Come Together  | 259200   | False    | 1         | 85         | 150            | [Preview](#)   |
 
-| Playlist ID      | Name                 | Owner         | Description        | Total Tracks | Followers | Collaborative | Public |
-|------------------|----------------------|---------------|--------------------|--------------|-----------|---------------|--------|
-| 37i9dQZF1DXcBWIGoYBM5M | This is The Beatles | Spotify       | Essential Beatles tracks | 50           | 3613410   | False         | True   |
+| Playlist ID  | Name                  | Owner     | Desc.              | Tracks | Followers | Collab | Public |
+|--------------|-----------------------|-----------|--------------------|--------|-----------|--------|--------|
+| 37i9dQZF     | This is The Beatles   | Spotify   | Beatles essentials | 50     | 3.6M      | No     | Yes    |
 
-| Track ID         | Track Name           | Danceability | Energy | Key | Loudness | Speechiness | Acousticness | Instrumentalness | Liveness | Valence | Tempo | Duration (ms) |
-|------------------|----------------------|--------------|--------|-----|----------|-------------|--------------|-------------------|----------|---------|-------|---------------|
-| 4ACVZ5p9Z0zUAZKRZPt3 | Let It Be           | 0.5          | 0.7    | 8   | -5.4      | 0.03        | 0.2          | 0.0               | 0.1      | 0.6     | 120   | 243000         |
+| Track ID     | Track Name     | Dance | Energy | Key | Loud | Speech | Acoustic | Instrumental | Live | Mood | Tempo | Dur |
+|--------------|----------------|-------|--------|-----|------|--------|----------|--------------|------|------|-------|-----|
+| 4ACVZ5       | Let It Be      | 0.5   | 0.7    | 8   | -5.4 | 0.03   | 0.2      | 0.0          | 0.1  | 0.6  | 120   | 243 |
 
 #### YouTube API
 
-| Video ID         | Title                     | Published Date   | Tags                 | Category ID | View Count | Like Count | Comment Count | Like-to-View Ratio | Duration |
-|------------------|---------------------------|------------------|----------------------|-------------|------------|------------|---------------|---------------------|----------|
-| dQw4w9WgXcQ      | Hey Jude (Remastered)     | 2024-01-20      | Beatles, Music       | 10          | 5000000    | 45000      | 1000          | 0.009               | 210      |
+| Video ID     | Title             | Date       | Tags            | Cat. | Views   | Likes | Comments | Like/View | Dur. |
+|--------------|-------------------|------------|-----------------|------|---------|-------|----------|-----------|------|
+| dQw4w9       | Hey Jude          | 2024-01-20 | Beatles, Music  | 10   | 5M      | 45K   | 1K       | 0.009     | 210  |
 
-| Channel ID       | Playlist Titles           | Total Videos |
-|------------------|---------------------------|--------------|
-| UCc4K7bAqpdBP8jh1j9XZAww | Beatles Classics          | 120          |
+| Channel ID   | Playlist Titles           | Videos |
+|--------------|---------------------------|--------|
+| UCc4K7       | Beatles Classics          | 120    |
 
-| Comment ID       | Video ID         | Author Display Name | Comment Text                 | Like Count | Published Date   | Updated Date   |
-|------------------|------------------|---------------------|------------------------------|------------|------------------|----------------|
-| L1zp6zZd1O       | dQw4w9WgXcQ      | MusicFan123         | "This song never gets old!"  | 123        | 2024-01-21      | 2024-01-22     |
+| Comment ID   | Video ID       | Author       | Comment                    | Likes | Date       | Updated |
+|--------------|----------------|--------------|-----------------------------|-------|------------|---------|
+| L1zp6z       | dQw4w9         | MusicFan123  | "This song never gets old!" | 123   | 2024-01-21 | 2024-01-22 |
 
 #### Genius API
 
-| Track Name        | Full Title              | Lyrics                                         | Genius Song ID | URL                                | Primary Artist |
-|-------------------|-------------------------|------------------------------------------------|----------------|------------------------------------|----------------|
-| Yesterday         | Yesterday by The Beatles | "Yesterday, all my troubles seemed so far away" | 2236           | [Link to Lyrics](#)                | The Beatles    |
+| Track Name   | Full Title             | Lyrics                               | Song ID | URL                | Artist      |
+|--------------|------------------------|--------------------------------------|---------|--------------------|-------------|
+| Yesterday    | Yesterday by The Beatles| "Yesterday, all my troubles seemed…" | 2236    | [Lyrics Link](#)   | The Beatles |
 
-| Artist ID         | Name                    | Profile URL                | Followers Count | Image URL                 |
-|-------------------|-------------------------|----------------------------|-----------------|---------------------------|
-| 586               | The Beatles             | [Profile Link](#)          | 5000000         | [Image Link](#)           |
+| Artist ID    | Name          | Profile URL         | Followers | Image URL         |
+|--------------|---------------|---------------------|-----------|-------------------|
+| 586          | The Beatles   | [Profile Link](#)   | 5M        | [Image Link](#)   |
 
 #### Ticketmaster API
 
-| Event Name       | Event Type | Date       | Time     | Event URL            | Venue Name             | City       | State | Country | Min Price | Max Price | Currency | Genre | Image URL            |
-|------------------|------------|------------|----------|-----------------------|------------------------|------------|-------|---------|-----------|-----------|----------|-------|-----------------------|
-| The Beatles Tribute Show | Concert    | 2024-05-10 | 20:00    | [Event Link](#)      | Madison Square Garden  | New York   | NY    | USA     | 50        | 200       | USD      | Rock  | [Image Link](#)      |
+| Event         | Type    | Date       | Time   | URL           | Venue                 | City   | State | Country | Min $ | Max $ | Cur. | Genre | Img URL       |
+|---------------|---------|------------|--------|---------------|-----------------------|--------|-------|---------|-------|-------|------|-------|---------------|
+| Beatles Show  | Concert | 2024-05-10 | 20:00  | [Event Link](#) | Madison Square Garden | New York | NY    | USA     | 50    | 200   | USD  | Rock  | [Image Link](#) |
 
-| Venue Name       | City       | General Info                | Child Info                     | Accessible Seating |
-|------------------|------------|-----------------------------|--------------------------------|---------------------|
-| Madison Square Garden | New York   | No outside food allowed   | All ages allowed               | Yes                 |
+| Venue         | City     | General Info         | Child Info         | Access |
+|---------------|----------|----------------------|--------------------|--------|
+| Madison Square Garden | New York | No outside food | All ages allowed  | Yes    |
 
-| Event Name       | Genre      | Segment      | SubGenre       | Type    |
-|------------------|------------|--------------|----------------|---------|
-| Beatles Live     | Rock       | Music        | Classic Rock   | Concert |
+| Event         | Genre   | Segment   | SubGenre       | Type    |
+|---------------|---------|-----------|----------------|---------|
+| Beatles Live  | Rock    | Music     | Classic Rock   | Concert |
 
 #### Discogs API
 
-| Artist Name      | Profile                                           | Genres     | Styles       | URLs                        |
-|------------------|---------------------------------------------------|------------|--------------|-----------------------------|
-| The Beatles      | Emerging from Liverpool, England in 1960...       | Rock       | Pop Rock     | [Link to Discogs](#)        |
+| Artist       | Profile                          | Genres    | Styles        | URLs         |
+|--------------|----------------------------------|-----------|---------------|--------------|
+| The Beatles  | Emerging from Liverpool, England | Rock      | Pop Rock      | [Discogs](#) |
 
-| Title            | Format            | Year | Label      | Type    | Resource URL             | User Rating |
-|------------------|-------------------|------|------------|---------|--------------------------|-------------|
-| Abbey Road       | Vinyl, LP, Album  | 1969 | Apple Records | Album   | [Link to Discogs](#)     | 4.9         |
+| Title        | Format   | Year | Label          | Type | URL              | Rating |
+|--------------|----------|------|----------------|------|------------------|--------|
+| Abbey Road   | Vinyl    | 1969 | Apple Records  | Album | [Discogs Link](#) | 4.9    |
 
-| Release Title    | Label Name        | Catalog Number | Year |
-|------------------|-------------------|----------------|------|
-| Let It Be        | Apple Records     | PCS 7096       | 1970 |
-
----
-
-The **Combined Data Table** is particularly valuable for professionals who need a multi-dimensional view of artist performance and trends across platforms, enabling richer insights and actionable analysis.
+| Release Title | Label          | Catalog # | Year |
+|---------------|----------------|-----------|------|
+| Let It Be     | Apple Records  | PCS 7096  | 1970 |
 
 
 
