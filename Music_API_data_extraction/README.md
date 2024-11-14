@@ -41,7 +41,7 @@ The **Combined Data Table** aggregates information from multiple APIs, enabling 
 - **Ticketmaster Data**: Provides event dates, venue details, location, and ticket availability.
 - **Discogs Data**: Adds discography details, release years, and user ratings.
 
-<img src="Assets/combined_table.png" alt="APIs" width="400" style="display: block; margin: 10px auto 20px auto;">
+<img src="Assets/combined_table.png" alt="APIs" width="800" style="display: block; margin: 10px auto 20px auto;">
 
 This consolidated dataset empowers users to perform comprehensive analysis, enabling comparisons and trend insights across different platforms and datasets. The **Combined Data Table** is particularly valuable for professionals who need a multi-dimensional view of artist performance and trends across platforms, enabling richer insights and actionable analysis.
 
