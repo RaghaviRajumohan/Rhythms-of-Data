@@ -6,7 +6,7 @@
 
 This project analyzes the sentiment of comments on Doechii's YouTube music videos, aiming to uncover audience engagement and predict view counts based on sentiment patterns. By applying natural language processing (NLP) techniques and regression modeling, this project provides insights into fan sentiment and its potential impact on video performance.
 
--- 
+
 
 ## Project Overview
 
@@ -16,9 +16,9 @@ This project analyzes the sentiment of comments on Doechii's YouTube music video
 - **Data Source**: 
    - YouTube API for extracting comments, video statistics, and engagement data from Doechii's channel.
 
--- 
 
-### Key Python Packages and Tools for YouTube Comment Sentiment Analysis
+
+## Key Python Packages and Tools for YouTube Comment Sentiment Analysis
 
 **Data Extraction and API Interaction:** ![Google API Client](https://img.shields.io/badge/Google%20API%20Client-4285F4?style=flat-square&logo=google&logoColor=white)
 
@@ -32,7 +32,7 @@ This project analyzes the sentiment of comments on Doechii's YouTube music video
 
 #### Environment Management: ![Python-dotenv](https://img.shields.io/badge/Dotenv-2CA5E0?style=flat-square&logo=python&logoColor=white) 
 
--- 
+
 
 ## Project Steps
 
