@@ -30,8 +30,6 @@ This project analyzes the sentiment of comments on Doechii's YouTube music video
 
 #### Data Visualization: ![Matplotlib](https://img.shields.io/badge/Matplotlib-007ACC?style=flat-square&logo=matplotlib&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat-square) ![WordCloud](https://img.shields.io/badge/WordCloud-FFA07A?style=flat-square&logo=python&logoColor=white) 
 
-#### Statistical Modeling and Regression Analysis: ![Statsmodels](https://img.shields.io/badge/Statsmodels-00A3E0?style=flat-square) ![Patsy](https://img.shields.io/badge/Patsy-003366?style=flat-square) 
-
 #### Environment Management: ![Python-dotenv](https://img.shields.io/badge/Dotenv-2CA5E0?style=flat-square&logo=python&logoColor=white) 
 
 -- 
