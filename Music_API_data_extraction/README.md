@@ -23,4 +23,4 @@ This project streamlines data collection and analysis within the music industry 
 
 **Utility Libraries for API Interaction:** ![Google API Client](https://img.shields.io/badge/Google%20API%20Client-4285F4?style=flat-square&logo=google&logoColor=white) ![Difflib](https://img.shields.io/badge/Difflib-3776AB?style=flat-square&logo=python&logoColor=white)
 
-**Data Processing and Analysis: **![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+**Data Processing and Analysis:** ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
