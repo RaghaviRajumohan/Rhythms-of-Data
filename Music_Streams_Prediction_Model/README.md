@@ -17,7 +17,7 @@ This project aims to analyze and predict song popularity based on attributes fro
   - Transformed highly skewed variables (e.g., `Views`, `Likes`, `Comments`, `Stream`) using logarithmic transformations.
   - Standardized variables for uniform scale, essential for regression modeling.
 
-### 2. Exploratory Data Analysis (EDA)
+### 2. Exploratory Data Analysis (EDA) ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat-square) ![Matplotlib](https://img.shields.io/badge/Matplotlib-007ACC?style=flat-square)
 
 Key insights from EDA informed our understanding of the data distributions and correlations:
 
