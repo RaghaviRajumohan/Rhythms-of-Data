@@ -18,7 +18,7 @@ This project analyzes the sentiment of comments on Doechii's YouTube music video
 
 
 
-## Key Python Packages and Tools for YouTube Comment Sentiment Analysis
+## Key Python Packages and Tools
 
 **Data Extraction and API Interaction:** ![Google API Client](https://img.shields.io/badge/Google%20API%20Client-4285F4?style=flat-square&logo=google&logoColor=white)
 
