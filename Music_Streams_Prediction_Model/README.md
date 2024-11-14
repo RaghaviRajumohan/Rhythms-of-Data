@@ -9,7 +9,7 @@ This project aims to analyze and predict song popularity based on attributes fro
 
 ## Project Steps
 
-### 1. Data Loading and Preprocessing ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)    ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+### 1. Data Loading and Preprocessing ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)    ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![StandardScaler](https://img.shields.io/badge/StandardScaler-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?style=flat-square&logo=scipy&logoColor=white)
 
 - **Data Cleaning**: Handled missing values and reset indices after removal of nulls.
 - **Feature Engineering**:
@@ -37,7 +37,7 @@ Key insights from EDA informed our understanding of the data distributions and c
   
      <img src="Assets/Scatter_Plot.png" alt="Density Plots" width="400" style="display: block; margin: 10px auto 20px auto;">
 
-### 3. Feature Selection
+### 3. Feature Selection 
 
 To determine the most impactful features for predicting `log_Stream`, we used three main approaches:
 
@@ -45,7 +45,8 @@ To determine the most impactful features for predicting `log_Stream`, we used th
 2. **Variance Inflation Factor (VIF)**: Assessed multicollinearity among predictors. High VIF values indicate strong collinearity with other features, leading us to remove certain variables to enhance model stability.
 3. **ANOVA**: Conducted to evaluate the significance of categorical variables in predicting `log_Stream` by examining F-values. The lower the p-value, the more significant the variable is in explaining variability in the target.
 
-#### Selected Features
+#### Selected Features ![BorutaPy](https://img.shields.io/badge/BorutaPy-3776AB?style=flat-square) ![BorutaShap](https://img.shields.io/badge/BorutaShap-3776AB?style=flat-square)
+
  
   - Variables with a VIF score above 10, such as `log_Likes` and `log_Views`, were excluded due to high multicollinearity.
 
@@ -53,7 +54,8 @@ To determine the most impactful features for predicting `log_Stream`, we used th
 
  -  ANOVA results show that `Album_single` and `Licensed` were more statistically significant in predicting `log_Stream`, with `Album_single` having the highest F-statistic. `Offical_Video` was dropped to resolve multicollinearity with `Licensed`.
 
-### 4. Model Development
+### 4. Model Development ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![Statsmodels](https://img.shields.io/badge/Statsmodels-00A3E0?style=flat-square)
+
 
 In developing a regression model to predict `log_Stream`, we explored various model iterations, including the use of Mallows' \( C_p \) criterion to guide model selection. Mallows' \( C_p \) is a model selection statistic that helps identify models that provide a good balance between accuracy and simplicity. Lower \( C_p \) values indicate models that are closer to the true model, with minimal bias and variance.
 
