@@ -21,6 +21,7 @@ This project explores machine learning techniques for music genre classification
 
 #### Data Visualization ![Matplotlib](https://img.shields.io/badge/Matplotlib-007ACC?style=flat-square&logo=matplotlib&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat-square)
 
+
 ---
 
 ## Project Steps
