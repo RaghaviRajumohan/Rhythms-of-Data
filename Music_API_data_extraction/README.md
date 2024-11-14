@@ -1,4 +1,5 @@
 <img src="Assets/multi_api.png" alt="APIs" width="400" style="display: block; margin: 10px auto 20px auto;">
+
 # Music Industry Data Extraction and Integration
 
 This project demonstrates how multi-API integration—specifically leveraging Spotify, YouTube, Genius, Ticketmaster, and Discogs APIs—can streamline the collection and analysis of diverse datasets within the music industry. By aggregating data from these sources, the project creates unified, customizable data frames that support focused insights on artist profiles, streaming metrics, audience engagement, event information, and fan sentiment. This automation of data extraction facilitates easy and repeatable data collection for strategic analysis.
