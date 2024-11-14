@@ -25,8 +25,52 @@ This project streamlines data collection and analysis within the music industry 
 
 **Data Processing and Analysis :** ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 
+
 ## Extracted Data Tables
 
-The project supports a range of data tables that provide detailed insights into artist profiles, audience engagement, event information, and other industry-relevant metrics. Below is an overview of the tables generated for each API.
+The project generates various data tables that provide in-depth insights into artist profiles, audience engagement, event information, and more. Below is a summary of the key data tables from each API, along with a **Combined Data Table** that merges insights across platforms.
 
+### Combined Data Table (Key Feature)
+The **Combined Data Table** aggregates information from multiple APIs, enabling a unified view of an artist's profile, popularity, and engagement across platforms. This table facilitates cross-platform analysis by merging key attributes from Spotify, YouTube, Genius, Ticketmaster, and Discogs into a single, cohesive dataset.
 
+**Fields in Combined Data Table:**
+- **Artist Name**: Unified artist name across APIs.
+- **Spotify Data**: Includes genre, popularity score, and follower count from Spotify.
+- **YouTube Data**: Combines metrics like view count, like-to-view ratio, comment-to-view ratio, and engagement metrics.
+- **Genius Data**: Contains lyrical insights and artist metadata from Genius.
+- **Ticketmaster Data**: Provides event dates, venue details, location, and ticket availability.
+- **Discogs Data**: Adds discography details, release years, and user ratings.
+
+This consolidated dataset empowers users to perform comprehensive analysis, enabling comparisons and trend insights across different platforms and datasets.
+
+### Individual Data Tables by API
+
+#### Spotify API
+- **Artist Data Table**: Metadata such as artist ID, name, genre, popularity, and follower count.
+- **Album Data Table**: Album information including album ID, name, release date, track count, and album type.
+- **Track Data Table**: Individual track details like track ID, name, duration, popularity, and playlist count.
+- **Playlist Data Table**: Information on playlists featuring the artist, including playlist ID, name, owner, description, and follower count.
+- **Audio Features Table**: Track-specific audio attributes such as danceability, energy, key, loudness, speechiness, and tempo.
+
+#### YouTube API
+- **Video Data Table**: Video-specific metrics including video ID, title, published date, tags, view count, like count, comment count, and engagement ratios.
+- **Channel Data Table**: Insights into the artist's YouTube channel, with details on channel ID, playlists, and video count.
+- **Comments Data Table**: Aggregates top-level comments for each video, capturing details such as comment ID, author name, text, like count, and publication date.
+
+#### Genius API
+- **Song Lyrics Data Table**: Lyrics and metadata for each song, including track name, full title, Genius song ID, and URL.
+- **Artist Data Table**: Basic artist metadata with information such as artist ID, name, profile URL, and follower count.
+
+#### Ticketmaster API
+- **Event Data Table**: Music event details such as event name, type, date, time, venue, city, state, country, and ticket pricing.
+- **Venue Data Table**: Venue-specific information such as name, location, accessibility, general rules, and child policies.
+- **Event Classification Table**: Contains event classifications like genre, segment, sub-genre, and type.
+
+#### Discogs API
+- **Artist Data Table**: Artist metadata including name, profile, genres, styles, and URLs.
+- **Releases Data Table**: Information on the artist's releases, including title, format, year, label, and user rating.
+- **Label Data Table**: Details on labels associated with each release, with fields for release title, label name, catalog number, and release year.
+
+---
+
+The **Combined Data Table** is particularly valuable for professionals who need a multi-dimensional view of artist performance and trends across platforms, enabling richer insights and actionable analysis.
