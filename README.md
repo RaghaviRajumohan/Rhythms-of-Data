@@ -8,6 +8,10 @@ While creativity remains at the heart of music, numbers are now essential for na
 
 These projects highlight the diverse applications of data science within the music industry, from analyzing streaming patterns and fan engagement to understanding the factors that contribute to a song’s popularity. By leveraging data, we can make well-informed decisions that enhance an artist's reach, optimize promotional strategies, and ultimately foster a deeper connection between artists and audiences. In a world where creativity and data converge, these insights help shape the future of music with precision and purpose.
 
+![APIs](https://img.shields.io/badge/APIs-lightgrey?style=flat-square)
+![Python](https://img.shields.io/badge/Python-lightgrey?style=flat-square&logo=python)
+![SQL](https://img.shields.io/badge/SQL-lightgrey?style=flat-square)
+
 
 | Project Name | Description |    
 |---|---|
