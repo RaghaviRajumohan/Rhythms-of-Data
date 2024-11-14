@@ -48,36 +48,6 @@ This consolidated dataset empowers users to perform comprehensive analysis, enab
 
 ### Individual Data Tables by API
 
-#### Spotify API
-- **Artist Data Table**: Metadata such as artist ID, name, genre, popularity, and follower count.
-- **Album Data Table**: Album information including album ID, name, release date, track count, and album type.
-- **Track Data Table**: Individual track details like track ID, name, duration, popularity, and playlist count.
-- **Playlist Data Table**: Information on playlists featuring the artist, including playlist ID, name, owner, description, and follower count.
-- **Audio Features Table**: Track-specific audio attributes such as danceability, energy, key, loudness, speechiness, and tempo.
-
-#### YouTube API
-- **Video Data Table**: Video-specific metrics including video ID, title, published date, tags, view count, like count, comment count, and engagement ratios.
-- **Channel Data Table**: Insights into the artist's YouTube channel, with details on channel ID, playlists, and video count.
-- **Comments Data Table**: Aggregates top-level comments for each video, capturing details such as comment ID, author name, text, like count, and publication date.
-
-#### Genius API
-- **Song Lyrics Data Table**: Lyrics and metadata for each song, including track name, full title, Genius song ID, and URL.
-- **Artist Data Table**: Basic artist metadata with information such as artist ID, name, profile URL, and follower count.
-
-#### Ticketmaster API
-- **Event Data Table**: Music event details such as event name, type, date, time, venue, city, state, country, and ticket pricing.
-- **Venue Data Table**: Venue-specific information such as name, location, accessibility, general rules, and child policies.
-- **Event Classification Table**: Contains event classifications like genre, segment, sub-genre, and type.
-
-#### Discogs API
-- **Artist Data Table**: Artist metadata including name, profile, genres, styles, and URLs.
-- **Releases Data Table**: Information on the artist's releases, including title, format, year, label, and user rating.
-- **Label Data Table**: Details on labels associated with each release, with fields for release title, label name, catalog number, and release year.
-
-
-
-### Individual Data Tables by API
-
 | API          | Table Name                 | Columns                                                                                                    |
 |--------------|----------------------------|------------------------------------------------------------------------------------------------------------|
 | **Spotify**  | Artist Data Table          | Artist ID, Name, Genres, Popularity, Followers                                                             |
@@ -98,4 +68,3 @@ This consolidated dataset empowers users to perform comprehensive analysis, enab
 |              | Label Data Table           | Release Title, Label Name, Catalog Number, Year                                                            |
 
 ---
-
