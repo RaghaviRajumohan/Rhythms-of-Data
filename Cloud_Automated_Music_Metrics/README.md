@@ -22,3 +22,11 @@ This project leverages the **Google Cloud Console** to automate the extraction, 
 #### API Interactions: ![YouTube API](https://img.shields.io/badge/YouTube%20API-FF0000?style=flat-square&logo=youtube&logoColor=white)  ![Spotify API](https://img.shields.io/badge/Spotify%20API-1DB954?style=flat-square&logo=spotify&logoColor=white)
 
 ---
+
+### Live Demo 
+
+#### 1. 
+
+
+
+#### 2. 
