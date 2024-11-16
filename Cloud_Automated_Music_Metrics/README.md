@@ -14,35 +14,10 @@ This project leverages the **Google Cloud Console** to automate the extraction, 
 
 ### Tools and Technologies
 
-#### Cloud Infrastructure: ![Google Cloud Functions](https://img.shields.io/badge/Google%20Cloud-Functions-blue) ![Google Cloud Scheduler](https://img.shields.io/badge/Google%20Cloud-Scheduler-orange)
+#### Cloud Infrastructure: ![Google Cloud Console](https://img.shields.io/badge/Google%20Cloud%20Console-4285F4?style=flat-square&logo=google-cloud&logoColor=white)  ![Google Cloud Scheduler](https://img.shields.io/badge/Google%20Cloud%20Scheduler-F4B400?style=flat-square&logo=google-cloud&logoColor=white)
 
+#### API Interactions: ![YouTube API](https://img.shields.io/badge/YouTube%20API-FF0000?style=flat-square&logo=youtube&logoColor=white)  ![Spotify API](https://img.shields.io/badge/Spotify%20API-1DB954?style=flat-square&logo=spotify&logoColor=white)
 
-#### API Interactions: ![YouTube Data API](https://img.shields.io/badge/YouTube-Data%20API-red)  ![Spotify Web API](https://img.shields.io/badge/Spotify-Web%20API-green)
+#### Storage and Integration: ![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=flat-square&logo=google-sheets&logoColor=white)  ![gspread](https://img.shields.io/badge/gspread-34A853?style=flat-square&logo=python&logoColor=white)
 
-#### Storage and Integration: ![Google Sheets](https://img.shields.io/badge/Google%20Sheets-Integration-brightgreen)  ![gspread](https://img.shields.io/badge/gspread-Google%20Sheets%20Access-lightblue)
-
-### Programming and Libraries: ![Python](https://img.shields.io/badge/Python-Programming%20Language-yellow)  ![Requests](https://img.shields.io/badge/Requests-HTTP%20Library-blue)  ![google-auth](https://img.shields.io/badge/google--auth-API%20Authentication-brightgreen)  ![logging](https://img.shields.io/badge/logging-Debugging%20Logs-yellowgreen)![Pandas](https://img.shields.io/badge/Pandas-Data%20Manipulation-blue)  ![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-lightblue)
-
----
-
-## Tools and Technologies
-
-### Cloud Infrastructure
-![Google Cloud Console](https://img.shields.io/badge/Google%20Cloud%20Console-4285F4?style=flat-square&logo=google-cloud&logoColor=white)  
-![Google Cloud Scheduler](https://img.shields.io/badge/Google%20Cloud%20Scheduler-F4B400?style=flat-square&logo=google-cloud&logoColor=white)
-
-### API Interactions
-![YouTube API](https://img.shields.io/badge/YouTube%20API-FF0000?style=flat-square&logo=youtube&logoColor=white)  
-![Spotify API](https://img.shields.io/badge/Spotify%20API-1DB954?style=flat-square&logo=spotify&logoColor=white)
-
-### Storage and Integration
-![Google Sheets](https://img.shields.io/badge/Google%20Sheets-34A853?style=flat-square&logo=google-sheets&logoColor=white)  
-![gspread](https://img.shields.io/badge/gspread-34A853?style=flat-square&logo=python&logoColor=white)
-
-### Programming and Libraries
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)  
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)  
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)  
-![HTTPS Requests](https://img.shields.io/badge/HTTPS%20Requests-20232A?style=flat-square&logo=python&logoColor=white)  
-![google-auth](https://img.shields.io/badge/google--auth-34A853?style=flat-square&logo=google&logoColor=white)  
-![logging](https://img.shields.io/badge/logging-F4B400?style=flat-square&logo=python&logoColor=white)
+#### Programming and Libraries: ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)   ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)   ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)   ![HTTPS Requests](https://img.shields.io/badge/HTTPS%20Requests-20232A?style=flat-square&logo=python&logoColor=white)   ![google-auth](https://img.shields.io/badge/google--auth-34A853?style=flat-square&logo=google&logoColor=white)   ![logging](https://img.shields.io/badge/logging-F4B400?style=flat-square&logo=python&logoColor=white)
