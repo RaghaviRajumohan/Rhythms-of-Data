@@ -4,8 +4,8 @@
 
 In the modern music industry, where data drives success, tracking and analyzing performance metrics is essential. This repository contains two automated solutions designed to streamline workflows for music professionals:
 
-1. **YouTube Comments Tracker**: Automates the tracking and storage of YouTube video comments and video metrics.
-2. **Daily Artist Metrics Tracker**: Tracks and centralizes daily artist metrics from YouTube and Spotify.
+1. **Katy Perry YouTube Comments Tracker**: Automates the tracking and storage of YouTube video comments and video metrics.
+2. **Deochii Daily Artist Metrics Tracker**: Tracks and centralizes daily artist metrics from YouTube and Spotify.
 
 ### Objective
 This project leverages the **Google Cloud Console** to automate the extraction, processing, and storage of music industry performance metrics, providing real-time, actionable insights. The system uses cloud functions to interact with the **YouTube Data API** and **Spotify API**, retrieving data such as video metrics, comments, follower counts, and popularity scores. These functions process the raw data into structured, analysis-ready formats and update a centralized Google Sheet to ensure data accuracy and accessibility. Using Google Cloud Scheduler, these functions are triggered on a scheduled basis (e.g., daily), ensuring that metrics are updated automatically without manual intervention. By automating this pipeline, the project eliminates manual workflows, enabling music industry professionals to monitor artist growth, audience engagement, and market trends efficiently and effectively.
@@ -23,26 +23,20 @@ This project leverages the **Google Cloud Console** to automate the extraction, 
 
 ---
 
-### Demo Videos
+### Demo Videos (Right-click to open in a new tab)
 
-#### Comments Tracker Demo (Click)
+#### Comments Tracker Demo 
 <a href="https://youtu.be/vbNEWR7OnXg" target="_blank">
   <img src="https://img.youtube.com/vi/vbNEWR7OnXg/0.jpg" alt="Comments Tracker" width="400">
 </a>
 
-#### Daily Metrics Demo (Click)
+#### Daily Metrics Demo 
 <a href="https://youtu.be/KiGJzic31Zo" target="_blank">
   <img src="https://img.youtube.com/vi/KiGJzic31Zo/0.jpg" alt="Daily Metrics" width="400">
 </a>
 
+--- 
 
-#### Comments Tracker Demo (Click)
-<a href="https://youtu.be/vbNEWR7OnXg" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.youtube.com/vi/vbNEWR7OnXg/0.jpg" alt="Comments Tracker" width="400">
-</a>
+### Project Steps
 
-#### Daily Metrics Demo (Click)
-<a href="https://youtu.be/KiGJzic31Zo" target="_blank" rel="noopener noreferrer">
-  <img src="https://img.youtube.com/vi/KiGJzic31Zo/0.jpg" alt="Daily Metrics" width="400">
-</a>
 
