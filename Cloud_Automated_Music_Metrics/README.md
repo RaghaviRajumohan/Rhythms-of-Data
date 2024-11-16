@@ -4,8 +4,8 @@
 
 In the modern music industry, where data drives success, tracking and analyzing performance metrics is essential. This repository contains two automated solutions designed to streamline workflows for music professionals:
 
-1. **Katy Perry YouTube Comments Tracker**: Automates the tracking and storage of YouTube video comments and video metrics.
-2. **Deochii Daily Artist Metrics Tracker**: Tracks and centralizes daily artist metrics from YouTube and Spotify.
+1. **Deochii Daily Artist Metrics Tracker**: Tracks and centralizes daily artist metrics from YouTube and Spotify.
+2. **Katy Perry YouTube Comments Tracker**: Automates the tracking and storage of YouTube video comments and video metrics.
 
 ### Objective
 This project leverages the **Google Cloud Console** to automate the extraction, processing, and storage of music industry performance metrics, providing real-time, actionable insights. The system uses cloud functions to interact with the **YouTube Data API** and **Spotify API**, retrieving data such as video metrics, comments, follower counts, and popularity scores. These functions process the raw data into structured, analysis-ready formats and update a centralized Google Sheet to ensure data accuracy and accessibility. Using Google Cloud Scheduler, these functions are triggered on a scheduled basis (e.g., daily), ensuring that metrics are updated automatically without manual intervention. 
@@ -27,14 +27,14 @@ This project leverages the **Google Cloud Console** to automate the extraction, 
 
 ### Demo Videos (Right-click to open in a new tab)
 
-#### [Comments Tracker Demo](https://youtu.be/vbNEWR7OnXg) 
-<a href="https://youtu.be/vbNEWR7OnXg" target="_blank">
-  <img src="Assets/comments_tracker.png" alt="Comments Tracker" width="400">
-</a>
-
 #### [Daily Metrics Demo](https://youtu.be/KiGJzic31Zo) 
 <a href="https://youtu.be/KiGJzic31Zo" target="_blank">
   <img src="Assets/daily_metrics.png" alt="Daily Metrics" width="600">
+</a>
+
+#### [Comments Tracker Demo](https://youtu.be/vbNEWR7OnXg) 
+<a href="https://youtu.be/vbNEWR7OnXg" target="_blank">
+  <img src="Assets/comments_tracker.png" alt="Comments Tracker" width="400">
 </a>
 
 --- 
