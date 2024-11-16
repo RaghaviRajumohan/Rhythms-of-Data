@@ -14,7 +14,8 @@ This project leverages the **Google Cloud Console** to automate the extraction, 
 
 ### Tools and Technologies
 
-#### Cloud Infrastructure: ![Google Cloud Functions](https://img.shields.io/badge/Google%20Cloud-Functions-blue)  ![Google Cloud Scheduler](https://img.shields.io/badge/Google%20Cloud-Scheduler-orange)
+#### Cloud Infrastructure: ![Google Cloud Functions](https://img.shields.io/badge/Google%20Cloud-Functions-blue) ![Google Cloud Scheduler](https://img.shields.io/badge/Google%20Cloud-Scheduler-orange)
+
 
 #### API Interactions: ![YouTube Data API](https://img.shields.io/badge/YouTube-Data%20API-red)  ![Spotify Web API](https://img.shields.io/badge/Spotify-Web%20API-green)
 
