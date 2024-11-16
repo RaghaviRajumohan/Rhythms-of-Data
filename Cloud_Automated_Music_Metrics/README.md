@@ -25,8 +25,16 @@ This project leverages the **Google Cloud Console** to automate the extraction, 
 
 ### Live Demo 
 
-#### 1. 
+#### Comments Tracker Demo
+<video width="400" controls style="display: block; margin: 10px auto 20px auto;">
+  <source src="Assets/Comments_tracker.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
 
-
+#### Daily Metrics Demo
+<video width="400" controls style="display: block; margin: 10px auto 20px auto;">
+  <source src="Assets/Daily_metrics.mov" type="video/quicktime">
+  Your browser does not support the video tag.
+</video>
 
 #### 2. 
