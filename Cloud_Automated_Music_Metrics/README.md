@@ -34,3 +34,15 @@ This project leverages the **Google Cloud Console** to automate the extraction, 
 <a href="https://youtu.be/KiGJzic31Zo" target="_blank">
   <img src="https://img.youtube.com/vi/KiGJzic31Zo/0.jpg" alt="Daily Metrics" width="400">
 </a>
+
+
+#### Comments Tracker Demo (Click)
+<a href="https://youtu.be/vbNEWR7OnXg" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.youtube.com/vi/vbNEWR7OnXg/0.jpg" alt="Comments Tracker" width="400">
+</a>
+
+#### Daily Metrics Demo (Click)
+<a href="https://youtu.be/KiGJzic31Zo" target="_blank" rel="noopener noreferrer">
+  <img src="https://img.youtube.com/vi/KiGJzic31Zo/0.jpg" alt="Daily Metrics" width="400">
+</a>
+
