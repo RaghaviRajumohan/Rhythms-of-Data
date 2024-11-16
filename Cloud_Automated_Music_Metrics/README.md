@@ -24,3 +24,24 @@ This project leverages the **Google Cloud Console** to automate the extraction, 
 ### Programming and Libraries: ![Python](https://img.shields.io/badge/Python-Programming%20Language-yellow)  ![Requests](https://img.shields.io/badge/Requests-HTTP%20Library-blue)  ![google-auth](https://img.shields.io/badge/google--auth-API%20Authentication-brightgreen)  ![logging](https://img.shields.io/badge/logging-Debugging%20Logs-yellowgreen)![Pandas](https://img.shields.io/badge/Pandas-Data%20Manipulation-blue)  ![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-lightblue)
 
 ---
+
+### Cloud Infrastructure
+![Google Cloud Console](https://img.shields.io/badge/Google%20Cloud-Console-4285F4?style=flat-square&logo=google-cloud&logoColor=white)  
+![Google Cloud Scheduler](https://img.shields.io/badge/Google%20Cloud-Scheduler-F4B400?style=flat-square&logo=google-cloud&logoColor=white)
+
+### API Interactions
+![YouTube API](https://img.shields.io/badge/YouTube%20API-FF0000?style=flat-square&logo=youtube&logoColor=white)  
+![Spotify Web API](https://img.shields.io/badge/Spotify%20Web%20API-1DB954?style=flat-square&logo=spotify&logoColor=white)  
+
+### Storage and Integration
+![Google Sheets](https://img.shields.io/badge/Google%20Sheets-Integration-34A853?style=flat-square&logo=google-sheets&logoColor=white)  
+![gspread](https://img.shields.io/badge/gspread-Google%20Sheets%20Access-34A853?style=flat-square&logo=python&logoColor=white)
+
+### Programming and Libraries
+![Python](https://img.shields.io/badge/Python-Programming%20Language-3776AB?style=flat-square&logo=python&logoColor=white)  
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Manipulation-150458?style=flat-square&logo=pandas&logoColor=white)  
+![NumPy](https://img.shields.io/badge/NumPy-Scientific%20Computing-013243?style=flat-square&logo=numpy&logoColor=white)  
+![Requests](https://img.shields.io/badge/Requests-HTTP%20Library-20232A?style=flat-square&logo=python&logoColor=white)  
+![google-auth](https://img.shields.io/badge/google--auth-API%20Authentication-34A853?style=flat-square&logo=google&logoColor=white)  
+![logging](https://img.shields.io/badge/logging-Debugging%20Logs-F4B400?style=flat-square&logo=python&logoColor=white)
+
