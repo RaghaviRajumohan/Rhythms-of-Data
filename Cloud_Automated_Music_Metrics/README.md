@@ -32,7 +32,7 @@ This project leverages the **Google Cloud Console** to automate the extraction, 
 
 #### Daily Metrics Demo 
 <a href="https://youtu.be/KiGJzic31Zo" target="_blank">
-  <img src="Assets/daily_metrics.png" alt="Daily Metrics" width="400">
+  <img src="Assets/daily_metrics.png" alt="Daily Metrics" width="600">
 </a>
 
 --- 
