@@ -1,2 +1,4 @@
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/RaghaviRajumohan/Rhythms-of-Data/HEAD?filepath=Streams_Prediction_Calculator/Streams_Prediction_Calculator.ipynb)
+#### [Streams Prediction Calculator Demo](https://youtu.be/171_75nwfGY) 
+<a href="https://youtu.be/171_75nwfGY" target="_blank">
+  <img src="https://img.youtube.com/vi/171_75nwfGY/0.jpg" alt="Streams Prediction Calculator Demo" width="400">
+</a>
