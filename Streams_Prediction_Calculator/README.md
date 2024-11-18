@@ -9,8 +9,10 @@ This demo showcases the functionality of the Streams Prediction Calculator, an i
 ## Tools and Technologies Used
 
 ![Python](https://img.shields.io/badge/Python-3.8-blue?logo=python&logoColor=white)
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)
 ![Google Cloud](https://img.shields.io/badge/Google-Cloud-4285F4?logo=google-cloud&logoColor=white)
 ![Binder](https://img.shields.io/badge/Binder-Interactive-red?logo=binder&logoColor=white)
 ![ipywidgets](https://img.shields.io/badge/ipywidgets-Interactive-brightgreen?logo=python&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-Data--Analysis-yellow?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Scientific--Computing-lightblue?logo=numpy&logoColor=white)
 ![Requests](https://img.shields.io/badge/Requests-HTTP--Requests-darkgreen?logo=python&logoColor=white)
