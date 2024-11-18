@@ -1,4 +1,0 @@
-ipywidgets
-numpy
-pandas
-requests
