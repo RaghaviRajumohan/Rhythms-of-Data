@@ -31,9 +31,9 @@ This project explores machine learning techniques for music genre classification
 - **Data Source**: The GTZAN dataset, comprising pre-processed audio features and individual audio files.
 - **Preprocessing**: Features were extracted using Librosa, capturing important audio characteristics such as MFCCs, chroma, and spectral attributes to create a comprehensive dataset.
 
-### 2. Feature Selection and Visualization
+### 2. Feature Engineering
 
-Seven key features were chosen based on their role in capturing unique sound attributes:
+The Python package Librosa was employed to extract seven key features, each selected for its ability to capture distinct sound characteristics effectively:
 
 1. **Chroma STFT**: Highlights harmonic structures.
 2. **RMS Energy**: Measures intensity changes.
