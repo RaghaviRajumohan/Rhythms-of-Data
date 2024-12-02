@@ -53,11 +53,9 @@ Key features included in the analysis were:
 
 ### 4. Model Development and Tuning
 
-A variety of regression models were implemented to predict average ticket prices. The model with the lowest Mean Squared Error (MSE) was selected as the final model due to its superior predictive accuracy and lower error rate, ensuring it provides the most reliable ticket price predictions.
+A variety of regression models were implemented to predict average ticket prices. **Random Forest**, the model with the lowest Mean Squared Error (MSE) was selected as the final model due to its superior predictive accuracy and lower error rate, ensuring it provides the most reliable ticket price predictions.
 
 <img src="Assets/model_comparison.png" alt="Price Calculator in Action" width="400" style="display: block; margin: 10px auto 20px auto;">
-
-Through hyperparameter optimization using GridSearchCV, the Random Forest model demonstrated the best balance between prediction accuracy and model robustness, making it the preferred choice for dynamic ticket pricing.
 
 ### 5. Hyperparameter Optimization
 
