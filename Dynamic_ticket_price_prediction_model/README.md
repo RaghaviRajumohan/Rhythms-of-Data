@@ -44,6 +44,7 @@ Key features included in the analysis were:
 5. **Is Weekend**: Indicator for weekend events.
 6. **Supporting Artist Popularity**: Popularity of secondary artists.
 7. **Total Tickets Available**: Availability influencing pricing.
+8. **Reddit_Mentions_Today**: The number of times the event was mentioned in Reddit in a single day
 
 ### 3. Exploratory Data Analysis (EDA)
 
