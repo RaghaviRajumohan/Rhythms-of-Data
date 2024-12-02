@@ -70,7 +70,7 @@ Using GridSearchCV, hyperparameters for the Random Forest model were tuned to ma
 
 Permutation importance analysis identified the following top features influencing ticket prices:
 
-<img src="Assets/importance.png" alt="Price Calculator in Action" width="400" style="display: block; margin: 10px auto 20px auto;">
+<img src="Assets/importance.png" alt="Price Calculator in Action" width="600" style="display: block; margin: 10px auto 20px auto;">
 
 
 ### 7. Model Evaluation and Results
