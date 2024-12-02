@@ -100,16 +100,3 @@ The Random Forest model emerged as the most accurate, with the following evaluat
 - Deploy a web application for interactive price simulations.
 
 ---
-
-## Usage
-
-### Prerequisites
-
-- Python 3.x installed
-- Required libraries installed via `pip install -r requirements.txt`
-
-### Instructions
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/dynamic-ticket-pricing.git
