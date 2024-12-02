@@ -82,19 +82,6 @@ The Random Forest model emerged as the most accurate, with the following evaluat
 
 ---
 
-## Visual Highlights
-
-### Feature Importance
-
-![Feature Importance](Assets/feature_importance.png)
-
-### Model Comparison
-
-![Model Comparison](Assets/model_comparison.png)
-
-### Residual Plot
-
-![Residual Plot](Assets/residual_plot.png)
 
 ---
 
