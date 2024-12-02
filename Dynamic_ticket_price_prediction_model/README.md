@@ -31,7 +31,7 @@ The objective of this project is to develop and evaluate machine learning models
 ### 1. Data Loading and Preprocessing
 
 - **Dataset**: Custom dataset containing ticket sales data, artist popularity metrics, and event timing details.
-- **Preprocessing**: Handled missing values, log-transformed skewed data (e.g., follower counts), and engineered new features, such as `Log_Followers` and `Avg_Ticket_Price`.
+- **Preprocessing**: Handled missing values, log-transformed skewed data (e.g., follower counts), and engineered new features, such as `Avg_Ticket_Price`.
 
 ### 2. Feature Engineering
 
