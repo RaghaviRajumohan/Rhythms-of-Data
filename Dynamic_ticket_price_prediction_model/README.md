@@ -53,13 +53,11 @@ Key features included in the analysis were:
 
 ### 4. Model Development and Tuning
 
-A variety of regression models were implemented to predict average ticket prices:
+A variety of regression models were implemented to predict average ticket prices. The model with the lowest Mean Squared Error (MSE) was selected as the final model due to its superior predictive accuracy and lower error rate, ensuring it provides the most reliable ticket price predictions.
 
-1. **Ordinary Least Squares (OLS)**: Baseline regression model.
-2. **Ridge and Lasso Regression**: Addressed multicollinearity and feature selection.
-3. **ElasticNet Regression**: Combined Ridge and Lasso penalties.
-4. **Decision Tree Regression**: Captured nonlinear patterns in the data.
-5. **Random Forest Regression**: Ensemble-based model for robust predictions.
+<img src="Assets/model_comparison.png" alt="Price Calculator in Action" width="400" style="display: block; margin: 10px auto 20px auto;">
+
+Through hyperparameter optimization using GridSearchCV, the Random Forest model demonstrated the best balance between prediction accuracy and model robustness, making it the preferred choice for dynamic ticket pricing.
 
 ### 5. Hyperparameter Optimization
 
