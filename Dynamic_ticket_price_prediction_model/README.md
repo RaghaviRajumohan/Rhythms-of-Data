@@ -82,9 +82,6 @@ The Random Forest model emerged as the most accurate, with the following evaluat
 
 ---
 
-
----
-
 ## Applications and Future Work
 
 ### Applications
