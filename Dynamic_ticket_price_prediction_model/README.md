@@ -69,9 +69,9 @@ Using GridSearchCV, hyperparameters for the Random Forest model were tuned to ma
 ### 6. Feature Importance Analysis
 
 Permutation importance analysis identified the following top features influencing ticket prices:
-1. Popularity Score
-2. Years Active
-3. Days to Event
+
+<img src="Assets/importance.png" alt="Price Calculator in Action" width="400" style="display: block; margin: 10px auto 20px auto;">
+
 
 ### 7. Model Evaluation and Results
 
