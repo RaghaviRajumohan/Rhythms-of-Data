@@ -10,7 +10,7 @@ In the dynamic and competitive world of live events, effective ticket pricing st
 
 <img src="Assets/price_calculator.gif" alt="Price Calculator in Action" width="400" style="display: block; margin: 10px auto 20px auto;">
 
-The objective of this project is to develop and evaluate machine learning models to predict ticket prices for concerts using features such as artist attributes, event details, and ticket sales history. Through a comparison of regression models—including Ordinary Least Squares (OLS), Ridge, Lasso, ElasticNet, Decision Trees, and Random Forest—the project identifies the most effective approach for price prediction and highlights the features with the greatest impact on pricing decisions.
+The objective of this project is to develop and evaluate machine learning models to predict ticket prices for concerts using features such as artist attributes, event details, and ticket sales history. Through a comparison of regression models—including Ordinary Least Squares (OLS), Ridge, Lasso, ElasticNet, Decision Trees, and Random Forest—the project identifies **Decision Tree** as the most effective approach for price prediction and highlights the features with the greatest impact on pricing decisions.
 
 ---
 
