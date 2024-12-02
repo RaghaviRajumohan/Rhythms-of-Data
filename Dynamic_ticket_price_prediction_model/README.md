@@ -16,10 +16,13 @@ The objective of this project is to develop and evaluate machine learning models
 
 ## Key Python Packages and Tools
 
-- **Data Manipulation and Processing**: `pandas`, `numpy`, `scikit-learn`
-- **Visualization**: `matplotlib`, `seaborn`
-- **Machine Learning and Statistical Analysis**: `statsmodels`, `xgboost`, `scikit-learn`
-- **Interactive Tools**: `ipywidgets`
+- **Data Manipulation and Processing**: ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+
+- **Visualization**: ![Matplotlib](https://img.shields.io/badge/Matplotlib-007ACC?style=flat-square&logo=matplotlib&logoColor=white) ![Seaborn](https://img.shields.io/badge/Seaborn-3776AB?style=flat-square&logo=python&logoColor=white)
+
+- **Machine Learning and Statistical Analysis**: ![Statsmodels](https://img.shields.io/badge/Statsmodels-00A3E0?style=flat-square) ![XGBoost](https://img.shields.io/badge/XGBoost-FF6F00?style=flat-square&logo=xgboost&logoColor=white) ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+
+- **Interactive Tools**: ![Ipywidgets](https://img.shields.io/badge/Ipywidgets-3776AB?style=flat-square&logo=python&logoColor=white)
 
 ---
 
